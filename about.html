@@ -105,6 +105,129 @@
         @media (max-width: 768px) {
             h1 { font-size: 32px; }
             p { font-size: 16px; }
+            .img1 { width: 200px; height: 160px; }
+            .footer-logo .img2{ width: 70px; height: 90px; }
+            
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 26px; }
+            p { font-size: 14px; }
+            .img1 { width: 200px; height: 260px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+
+        <a href="index.html" class="logo-top">
+            <img src="logo.png.png" alt="Logo">
+            <span>US Men Brand</span>
+        </a>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="mailto:your-email@example.com">CONTACT</a></li>
+        </ul>
+
+    </div>
+</nav>
+
+<div class="center-wrapper">
+    <div class="container">
+        <h1>About Us</h1>
+        <p>
+Legacy is not given. It is built — one choice, one moment, one piece at a time.<br>
+At US, we create for the dreamers who became doers.<br>
+For the ones who rose quietly, worked relentlessly, and arrived with something to show for it.<br>
+Our jewelry is not decoration.<br> It is documentation — of your journey, your strength, and everything you refused to give up on.<br>
+
+Every collection is born from the belief that the most powerful thing you can wear is your own story.<br>
+Crafted in the finest materials, shaped by timeless artistry, and designed for those who have earned the right to shine.<br>
+
+You didn’t get here by accident. You built this. You lived this.<br>
+Now wear it!
+
+Because a legacy this powerful deserves to be seen.<br>
+<b>Wear Your Legacy.</b>
+        </p>
+    </div>
+</div>
+
+<img src="us.png" alt="Product 1" class="img1">
+
+<footer>
+    <div class="footer-logo">
+        <img class="img2" src="logo.png.png" alt="Logo">
+        <span>US Men Brand</span>
+        <p class="location">147 Albert Rd, Southsea, Portsmouth, Southsea PO4 0JW</p>
+    </div>
+
+    <div class="social-icons">
+        <a href="https://www.instagram.com/usmenbrand"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@usmenbrand"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://wa.me/9647507112721" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="mailto:umedsami95@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.getElementById("menu-toggle");
+    const nav = document.getElementById("nav-links");
+
+    menuBtn.addEventListener("click", function () {
+        nav.classList.toggle("show");
+    });
+});
+</script>
+
+</body>
+</html>
+        .footer-logo {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            gap: 5px;
+        }
+
+        .footer-logo img {
+            width: 50px;
+        }
+
+        .location {
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        .social-icons {
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #fff;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #ccc;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 32px; }
+            p { font-size: 16px; }
             .img1 { width: 160px; height: 160px; }
         }
 
