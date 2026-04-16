@@ -98,7 +98,7 @@ nav {
 .nav-links a:hover { color: #aaa; }
 
 .hero-section {
-    background: url('2.jpeg');
+    background: url('background.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 30%;
@@ -242,7 +242,7 @@ footer {
 }
 
 .hero-section {
-    background: url('2.jpeg');
+    background: url('background.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
