@@ -6,7 +6,7 @@
 }
 
 
-html { 
+html {
     scroll-behavior: smooth;
 }
 
@@ -87,6 +87,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 }
 
 .logo-top img { height: 25px; }
@@ -246,7 +247,6 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-
 
     display: flex;
     justify-content: center;
