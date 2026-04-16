@@ -93,7 +93,7 @@ nav {
 .logo-top span { font-size: 12px; letter-spacing: 2px; font-weight: bold; }
 
 .nav-links { display: flex; list-style: none; gap: 30px; }
-.nav-links a { color: #fff; text-decoration: none; font-size: 11px; letter-spacing: 1px; transition: 0.3s; }
+.nav-links a { color: #fff; text-decoration: none; font-size: 18px;font-weight: 700; letter-spacing: 1px; transition: 0.3s; }
 .nav-links a:hover { color: #aaa; }
 
 .hero-section {
@@ -126,7 +126,7 @@ nav {
 }
 
 .tagline {
-    font-size: 10px;
+    font-size: 13px;
     color: #ccc;
     letter-spacing: 6px;
     margin-top: 10px;
@@ -239,4 +239,19 @@ footer {
     align-items: center;
     gap: 0px;
 }
+
+.hero-section {
+    background: url('background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 }
