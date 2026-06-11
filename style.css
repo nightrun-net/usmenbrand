@@ -5,11 +5,9 @@
     box-sizing: border-box;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
-
 
 body {
     background-color: #0a0a0a; 
@@ -19,53 +17,6 @@ body {
     line-height: 1.6;
 }
 
-.container {
-    text-align: center;
-    max-width: 600px;
-    width: 100%; /* responsive fix */
-    padding: 20px;
-}
-/* ============ MOBILE MENU FIX ============ */
-
-.menu-toggle{
-    display:none;
-}
-
-/* MOBILE ONLY */
-@media (max-width:768px){
-
-    .menu-toggle{
-        display:block;
-        font-size:24px;
-        cursor:pointer;
-        z-index:10001;
-    }
-
-    /* گرنگ: display:flex لێرە دوبارە بنووسە */
-    .nav-links{
-        display:flex;          /* 👈 ئەمە گرنگترین چارەسەرە */
-        position:fixed;
-        top:0;
-        right:0;
-        width:100%;
-        height:100vh;
-        background:#0a0a0a;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        gap:40px;
-        list-style:none;
-
-        transform:translateX(100%);
-        transition:0.4s ease;
-        z-index:10000;
-    }
-
-    .nav-links.show{
-        transform:translateX(0);
-    }
-
-}
 /* 2. Navigation */
 nav {
     padding: 20px 5%;
@@ -87,28 +38,28 @@ nav {
     display: flex;
     align-items: center;
     gap: 10px;
-    cursor: pointer;
 }
 
 .logo-top img { height: 25px; }
 .logo-top span { font-size: 12px; letter-spacing: 2px; font-weight: bold; }
 
 .nav-links { display: flex; list-style: none; gap: 30px; }
-.nav-links a { color: #fff; text-decoration: none; font-size: 18px;font-weight: 700; letter-spacing: 1px; transition: 0.3s; }
+.nav-links a { color: #fff; text-decoration: none; font-size: 11px; letter-spacing: 1px; transition: 0.3s; }
 .nav-links a:hover { color: #aaa; }
 
+/* 3. Hero Section */
 .hero-section {
-    background: url('background.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 30%;
-    background-attachment: fixed;
-
     height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background: url('background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
 
 .main-logo-centered {
@@ -119,7 +70,7 @@ nav {
 }
 
 .brand-name {
-    font-size: clamp(35px, 8vw, 65px);
+    font-size: 36px;
     letter-spacing: 15px;
     font-weight: 200;
     text-transform: uppercase;
@@ -127,7 +78,7 @@ nav {
 }
 
 .tagline {
-    font-size: 13px;
+    font-size: 10px;
     color: #ccc;
     letter-spacing: 6px;
     margin-top: 10px;
@@ -141,42 +92,70 @@ nav {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 40px;
+    direction: ltr; /* Ensures cards and text align to the left regardless of RTL body */
 }
 
 .product-item {
     position: relative;
-    aspect-ratio: 1/1;
     overflow: hidden;
     background: #111;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    border-radius: 8px; /* Rounded corners for premium look */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
 }
 
 .product-item img {
     width: 100%;
-    height: 100%;
+    height: auto; /* Allow image height to adjust based on content */
     object-fit: cover;
     transition: transform 1.2s cubic-bezier(0.2, 1, 0.3, 1);
+    border-radius: 8px 8px 0 0; /* Rounded top corners for image */
 }
 
-.product-item:hover img { transform: scale(1.08); }
+.product-item:hover img { 
+    transform: scale(1.08); 
+}
 
+.product-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+}
 
+/* Shadow overlay to make text readable on images */
+/* Removed overlay since text is now below image */
 
-.view-btn {
-    position: absolute;
-    bottom: 25px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #fff;
-    color: #000;
-    padding: 12px 25px;
-    font-size: 10px;
+/* Premium styles for product name and price */
+.product-name {
+    padding: 0 15px;
+    font-size: 0.75rem; /* Bchuk hate kirin */
+    font-weight: 600;
+    color: #fff; /* Color spi */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left; /* Lay left */
+    margin-top: 12px;
+    margin-bottom: 4px;
+    z-index: 2;
+}
+.product-price {
+    padding: 0 15px;
+    font-size: 0.85rem; /* Bchuk hate kirin */
     font-weight: bold;
-    text-decoration: none;
-    opacity: 0;
-    transition: all 0.4s ease;
+    color: #aaa; /* Color rsasi */
+    letter-spacing: 0.5px;
+    text-align: left; /* Lay left */
+    margin-bottom: 5px;
+    z-index: 2;
 }
 
-.product-item:hover .view-btn { opacity: 1; bottom: 35px; }
+/* Removed .view-btn styles as they are no longer needed */
+/*
+.view-btn { ... }
+.product-item:hover .view-btn { ... }
+*/
 
 /* 5. About & Footer */
 .about-section { padding: 100px 10%; text-align: center; background: #0f0f0f; }
@@ -212,7 +191,7 @@ footer {
 
 .social-icons { display: flex; gap: 25px; flex-wrap: wrap; }
 .social-icons a { color: #fff; font-size: 22px; transition: 0.3s; opacity: 0.6; }
-.social-icons a:hover { transform: translateY(-5px); opacity: 1; color: #f4f4f4; }
+.social-icons a:hover { transform: translateY(-5px); opacity: 1; color: #c5a059; }
 
 /* Animations */
 @keyframes fadeInLogo { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
@@ -220,7 +199,7 @@ footer {
 
 /* Mobile Optimization */
 @media (max-width: 768px) {
-   
+    .nav-links { display: none; }
     footer { 
         flex-direction: column; 
         gap: 40px; 
@@ -229,29 +208,4 @@ footer {
     }
     .footer-logo { flex-direction: column; }
     .social-icons { justify-content: center; }
-  .logo-top img{
-        width:40px;
-        height:50px;
-        object-fit:contain;
-        
-    }
-.logo-top{
-    display: flex;
-    align-items: center;
-    gap: 0px;
-}
-
-.hero-section {
-    background: url('background.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
 }
