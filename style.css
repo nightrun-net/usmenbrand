@@ -40,12 +40,17 @@ nav {
     gap: 10px;
 }
 
-.logo-top img { height: 25px; }
-.logo-top span { font-size: 12px; letter-spacing: 2px; font-weight: bold; }
+.logo-top img { height: 45px; } /* لۆگۆکە گەورەتر کرا بۆ لاپتۆپ */
+.logo-top span { font-size: 20px; letter-spacing: 2px; font-weight: bold; } /* ناوی براندەکە گەورەتر کرا */
 
 .nav-links { display: flex; list-style: none; gap: 30px; }
 .nav-links a { color: #fff; text-decoration: none; font-size: 11px; letter-spacing: 1px; transition: 0.3s; }
 .nav-links a:hover { color: #aaa; }
+
+/* ئایکۆنی مێنوەکە لێرە دەشاردرێتەوە بۆ لاپتۆپ و ئایپاد و پی سی */
+.menu-toggle {
+    display: none;
+}
 
 /* 3. Hero Section */
 .hero-section {
@@ -64,6 +69,8 @@ nav {
 
 .main-logo-centered {
     height: 160px;
+    width: auto; /* ڕێگری دەکات لە کشانی وێنەکە */
+    object-fit: contain; /* شێوەی وێنەکە وەک خۆی دەپارێزێت */
     margin-bottom: 15px;
     filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.2));
     animation: fadeInLogo 2s ease-in-out;
@@ -199,7 +206,51 @@ footer {
 
 /* Mobile Optimization */
 @media (max-width: 768px) {
-    .nav-links { display: none; }
+    /* Show hamburger on mobile */
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 10001;
+    }
+
+    .main-logo-centered {
+        height: 120px; /* کەمێک بچووکتر بۆ مۆبایل تاوەکو شارپتر دیار بێت */
+        max-width: 80%; /* دڵنیایی دەدات کە لە شاشە دەرناچێت */
+    }
+
+    .logo-top img {
+        height: 35px; /* قەبارەی لۆگۆکە گەورەتر کرا */
+    }
+
+    .logo-top span {
+        font-size: 16px; /* قەبارەی دەقەکە گەورەتر کرا بۆ مۆبایل */
+    }
+
+    /* Mobile menu styles */
+    .nav-links {
+        display: flex; /* Make it flex for mobile menu */
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background: #0a0a0a;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        transform: translateX(100%); /* Hidden off-screen by default */
+        transition: transform 0.4s ease;
+        z-index: 10000;
+    }
+    .nav-links.show {
+        transform: translateX(0); /* Slide in when 'show' class is added */
+    }
+    .nav-links a { /* Adjust font size for mobile menu */
+        font-size: 18px;
+        font-weight: 700;
+    }
     footer { 
         flex-direction: column; 
         gap: 40px; 
@@ -208,4 +259,47 @@ footer {
     }
     .footer-logo { flex-direction: column; }
     .social-icons { justify-content: center; }
+
+    /* گۆڕینی لیستی بەرهەمەکان بۆ ٢ بە ٢ لەسەر مۆبایل */
+    .collection {
+        padding: 40px 5%; /* کەمکردنەوەی بۆشایی لایەکان */
+    }
+    .product-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px; /* بۆشایی نێوان بەرهەمەکان */
+    }
+    .product-item {
+        width: calc(50% - 5px); /* نیوەی شاشەکە بۆ هەر دانەیەک */
+        padding-bottom: 10px;
+    }
+    .product-name {
+        font-size: 0.65rem; /* بچووککردنەوەی ناوی بەرهەم */
+    }
+    .product-price {
+        font-size: 0.75rem; /* بچووککردنەوەی نرخ */
+    }
+.hero-section {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+.main-logo-centered {
+    height: 200px;
+    width: auto; /* ڕێگری دەکات لە کشانی وێنەکە */
+    object-fit: contain; /* شێوەی وێنەکە وەک خۆی دەپارێزێت */
+    margin-bottom: 15px;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.2));
+    animation: fadeInLogo 2s ease-in-out;
+}
+
 }
