@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - US Men Brand</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+  
+<nav>
+    <div class="nav-container">
+        <div class="logo-top" onclick="window.location.href='index.html'">
+            <img src="logo.png.png" alt="Logo">
+            <span>US Men Brand</span>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.html#collection">SHOP</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="mailto:umedsami95@gmail.com">CONTACT</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main class="product-detail-container">
+    <div class="product-slider" id="slider">
+        <div class="slider-wrapper" id="slider-wrapper">
+            <!-- Images injected by JS -->
+        </div>
+        <!-- Slider Arrows -->
+        <button class="slider-arrow prev" onclick="moveSlide(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="slider-arrow next" onclick="moveSlide(1)"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <div class="product-info-box">
+        <h1 class="detail-name" id="p-name">LOADING...</h1>
+        <p class="detail-price" id="p-price">---</p>
+        
+        <div class="info-section">
+            <h4 class="info-label">ABOUT THE PIECE</h4>
+            <p class="detail-description" id="p-desc">Loading description...</p>
+        </div>
+
+        <div class="info-section">
+            <h4 class="info-label">SPECIFICATIONS</h4>
+            <ul class="detail-specs" id="p-specs">
+                <!-- Specifications injected by JS -->
+            </ul>
+        </div>
+
+        <div class="contact-btn-wrapper">
+            <a href="https://wa.me/447352935273" class="view-btn-dark">WHATSAPP US</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-logo">
+        <img src="logo.png.png" alt="Logo">
+        <span>US MEN BRAND</span>
+    </div>
+    
+    <div class="social-icons">
+        <a href="https://www.instagram.com/usmenbrand?igsh=Mng1MGptcmh5ZTB2&utm_source=qr" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@usmenbrand?_r=1&_t=ZS-95LcBxlZjPR" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://wa.me/447352935273" aria-label="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="mailto:umedsami95@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+</footer>
+
+<!-- Lightbox for image zoom -->
+<div id="lightbox" class="lightbox">
+    <span class="lightbox-close"><i class="fa-solid fa-xmark"></i></span>
+    <img class="lightbox-content" id="lightbox-img">
+</div>
+
+<script src="product.js"></script>
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('id');
+    const currentProduct = productsData[productId] || productsData["default"];
+
+    // Inject Data
+    document.getElementById('p-name').innerText = currentProduct.name;
+    document.getElementById('p-price').innerText = currentProduct.price;
+    document.getElementById('p-desc').innerText = currentProduct.about;
+    
+    const specsList = document.getElementById('p-specs');
+    if (currentProduct.specs) {
+        currentProduct.specs.forEach(spec => {
+            const li = document.createElement('li');
+            li.innerText = spec;
+            specsList.appendChild(li);
+        });
+    }
+
+    const sliderWrapper = document.getElementById('slider-wrapper');
+    currentProduct.imgs.forEach(src => {
+        const img = document.createElement('img');
+        img.src = src;
+        img.className = 'gallery-img';
+        img.alt = currentProduct.name;
+        img.onclick = function() { openLightbox(this.src); };
+        sliderWrapper.appendChild(img);
+    });
+
+    // Slider Logic
+    let currentIndex = 0;
+    const totalSlides = currentProduct.imgs.length;
+
+    window.moveSlide = function(direction) {
+        currentIndex += direction;
+        if (currentIndex < 0) currentIndex = totalSlides - 1;
+        if (currentIndex >= totalSlides) currentIndex = 0;
+        updateSlider();
+    };
+
+    function updateSlider() {
+        // بەکارهێنانی translateX بە ئاڕاستەی ستاندارد
+        sliderWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    function openLightbox(src) {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        lightbox.style.display = 'flex'; /* گۆڕدرا بۆ flex بۆ ناوەڕاستکردن */
+        lightboxImg.src = src;
+    }
+
+    // چالاککردنی مێنوی مۆبایل (Hamburger Menu)
+    document.getElementById("menu-toggle").addEventListener("click", function() {
+        document.getElementById("nav-links").classList.toggle("show");
+    });
+
+    // داخستنی لایتبۆکس بە کلیک کردن لە دەرەوەی وێنەکە
+    document.getElementById("lightbox").addEventListener("click", function(e) {
+        if(e.target !== document.getElementById("lightbox-img")) {
+            this.style.display = "none";
+        }
+    });
+
+    // Scroll to top
+    window.scrollTo(0, 0);
+</script>
+
+</body>
+</html>
