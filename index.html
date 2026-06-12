@@ -42,47 +42,8 @@
 
     <section class="collection">
         <h2 class="section-title">DISCOVER THE COLLECTION</h2>
-        <div class="product-grid">
-            <div class="product-item">
-                <img src="Gemini_Generated_Image_ux8grgux8grgux8g.png" alt="Product 1">
-                <p class="product-name">US Men Brand</p>
-                <p class="product-price">129.99£</p>
-            </div>
-            <div class="product-item">
-                <img src="Gemini_Generated_Image_ux8grgux8grgux8g.png" alt="Product 2">
-                <p class="product-name">US Men Brand</p>
-                <p class="product-price">199.99£</p>
-            </div>
-            <div class="product-item">
-                <img src="Gemini_Generated_Image_ux8grgux8grgux8g (1).png" alt="Product 3">
-                <p class="product-name">US Men Brand</p>
-                <p class="product-price">249.99£</p>
-            </div>
-            <div class="product-item">
-                <img src="p3.png" alt="Product 4">
-                <p class="product-name">US Men Brand</p>
-                <p class="product-price">349.99£</p>
-            </div>
-              <div class="product-item">
-                <img src="p3.png" alt="Product 4">
-                <p class="product-name">US Men Brand</p>
-                <p class="product-price">349.99£</p>
-            </div>
-              <div class="product-item">
-                <img src="p3.png" alt="Product 4">
-                <p class="product-name">US Men Brand</p>
-                <p class="product-price">349.99£</p>
-            </div>
-              <div class="product-item">
-                <img src="p3.png" alt="Product 4">
-                <p class="product-name">US Men Brand</p>
-                <p class="product-price">349.99£</p>
-            </div>
-              <div class="product-item">
-                <img src="p3.png" alt="Product 4">
-                <p class="product-name">US Men Brand</p>
-                <p class="product-price">349.99£</p>
-            </div>
+        <div class="product-grid" id="product-grid">
+            <!-- Products will be injected here via JavaScript -->
         </div>
     </section>
 
@@ -97,7 +58,7 @@
 <footer>
     <div class="footer-logo">
         <img src="logo.png.png" alt="Logo">
-        <span>US Men Brand</span>
+        <span>US MEN BRAND</span>
     </div>
     
     <div class="social-icons">
@@ -109,6 +70,7 @@
     </div>
 </footer>
 
+<script src="product.js"></script>
 <script>
 // Forced scroll to top on refresh
 if (history.scrollRestoration) {
@@ -117,6 +79,23 @@ if (history.scrollRestoration) {
 window.scrollTo(0, 0);
 
 document.addEventListener("DOMContentLoaded", function () {
+    // Populate Product Grid
+    const grid = document.getElementById("product-grid");
+    if (grid) {
+        Object.keys(productsData).forEach(id => {
+            const product = productsData[id];
+            const card = document.createElement("a");
+            card.href = `product.html?id=${id}`;
+            card.className = "product-item";
+            card.innerHTML = `
+                <img src="${product.imgs[0]}" alt="${product.name}">
+                <p class="product-name">${product.name}</p>
+                <p class="product-price">${product.price}</p>
+            `;
+            grid.appendChild(card);
+        });
+    }
+
     const menuBtn = document.getElementById("menu-toggle");
     const nav = document.getElementById("nav-links");
 
