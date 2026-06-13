@@ -11,7 +11,7 @@
 <body>
   
 <nav>
-    <div class="nav-container">
+    <div class="nav-container" style="background: transparent !important;">
         <div class="logo-top" onclick="window.location.href='index.html'">
             <img src="logo.png.png" alt="Logo">
             <span>US Men Brand</span>
@@ -85,7 +85,7 @@
 <script>
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get('id');
-    const currentProduct = productsData[productId] || productsData["default"];
+    const currentProduct = productsData[productId] || productsData["1"]; // گۆڕدرا بۆ ١ وەک دیفۆڵت ئەگەر ئایدی نەبوو
 
     // Inject Data
     document.getElementById('p-name').innerText = currentProduct.name;
@@ -105,7 +105,7 @@
     currentProduct.imgs.forEach(src => {
         const img = document.createElement('img');
         img.src = src;
-        img.className = 'gallery-img';
+        img.className = 'slider-img'; // گۆڕدرا بۆ slider-img بۆ ئەوەی لەگەڵ CSS یەکبگرێتەوە
         img.alt = currentProduct.name;
         img.onclick = function() { openLightbox(this.src); };
         sliderWrapper.appendChild(img);
@@ -123,26 +123,34 @@
     };
 
     function updateSlider() {
-        // بەکارهێنانی translateX بە ئاڕاستەی ستاندارد
         sliderWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
 
     function openLightbox(src) {
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = document.getElementById('lightbox-img');
-        lightbox.style.display = 'flex'; /* گۆڕدرا بۆ flex بۆ ناوەڕاستکردن */
+        lightbox.style.display = 'flex'; 
         lightboxImg.src = src;
+        document.body.style.overflow = 'hidden'; // ڕێگری لە سکڕۆڵ کاتێک مۆدێلەکە کراوەیە
     }
+
+    function closeLightbox() {
+        document.getElementById("lightbox").style.display = "none";
+        document.body.style.overflow = 'auto'; // گەڕاندنەوەی سکڕۆڵ
+    }
+
+    // داخستنی مۆدێل بە دوگمەی (X)
+    document.querySelector(".lightbox-close").onclick = closeLightbox;
 
     // چالاککردنی مێنوی مۆبایل (Hamburger Menu)
     document.getElementById("menu-toggle").addEventListener("click", function() {
         document.getElementById("nav-links").classList.toggle("show");
     });
 
-    // داخستنی لایتبۆکس بە کلیک کردن لە دەرەوەی وێنەکە
+    // داخستنی لایتبۆکس بە کلیک کردن لە پاشبنەما (دەرەوەی وێنەکە)
     document.getElementById("lightbox").addEventListener("click", function(e) {
-        if(e.target !== document.getElementById("lightbox-img")) {
-            this.style.display = "none";
+        if(e.target === this) {
+            closeLightbox();
         }
     });
 
