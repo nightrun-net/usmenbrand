@@ -9,14 +9,14 @@
 }
 
 .product-detail-container {
-    padding: 160px 8% 100px; /* زیادکردنی بۆشایی سەرەوە بۆ ئەوەی نەکەوێتە ژێر مێنوەکە */
+    padding: 140px 8% 100px;
     display: grid;
-    grid-template-columns: 1.1fr 0.9fr; /* هاوسەنگکردنی قەبارەی وێنە و دەق */
-    gap: 100px; /* زیادکردنی بۆشایی نێوان وێنە و دەق */
-    min-height: 85vh;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 100px;
+    min-height: 100vh;
     max-width: 1600px;
     margin: 0 auto;
-    align-items: start;
+    align-items: start; /* دەقەکان دەباتە سەرەوە لای سەرەتای سلایدەرەکە */
     direction: ltr; /* وێنەکە دەخاتە لای چەپ بۆ لاپتۆپ و تیڤی */
 }
 
@@ -26,6 +26,20 @@
     border-radius: 24px;
     background: #000;
     box-shadow: 0 40px 80px rgba(0,0,0,0.6);
+    direction: ltr;
+}
+
+/* Linear black gradient for a premium look at the bottom of the slider */
+.product-slider::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    pointer-events: none;
+    z-index: 2;
 }
 
 .slider-wrapper {
@@ -37,7 +51,7 @@
     width: 100%;
     flex-shrink: 0;
     object-fit: cover;
-    aspect-ratio: 4/5; /* بەرزی وێنەکە کەمێک زیاتر کرا */
+    aspect-ratio: 2/3; /* بەرزییەکەی زیاد کرا بۆ دیزاینێکی پریمێوم */
     transition: transform 1.5s ease;
 }
 
@@ -66,18 +80,20 @@
 .slider-dots { display: none; } /* Circles removed as requested */
 
 .product-info-box {
-    padding-top: 20px;
+    padding-top: 20px; /* نزیککردنەوەی زانیارییەکان بۆ سەرەوە */
     display: flex;
     flex-direction: column;
     text-align: left;
     direction: ltr; /* English content */
-    animation: fadeInUp 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    animation: fadeInUp 1s cubic-bezier(0.2, 1, 0.3, 1) forwards;
+    position: sticky;
+    top: 140px;
 }
 
 .detail-name {
-    font-size: 2.2rem; /* گەورەکردنی ناوی بەرهەم بۆ شاشە گەورەکان */
+    font-size: 1.6rem; 
     font-weight: 300;
-    letter-spacing: 14px;
+    letter-spacing: 12px;
     text-transform: uppercase;
     margin-bottom: 15px;
     line-height: 1.1;
@@ -85,10 +101,10 @@
 }
 
 .detail-price {
-    font-size: 1.6rem; /* گەورەکردنی نرخ */
+    font-size: 1.2rem; 
     color: #c5a059;
-    font-weight: 300;
-    margin-bottom: 40px;
+    font-weight: 400;
+    margin-bottom: 30px;
     letter-spacing: 2px;
 }
 
@@ -162,6 +178,61 @@
     transform: scale(1.02);
 }
 
+/* --- Lightbox / Modal Styles --- */
+.lightbox {
+    display: none; /* بە شێوەی ئاسایی شاراوەیە */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(15px); /* کاریگەری تەڵخکردنی پشتەوە */
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.lightbox-content {
+    max-width: 95%;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8);
+    animation: zoomIn 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 10001;
+}
+
+.lightbox-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
 /* Mobile Responsive Fixes */
 @media (max-width: 768px) {
     .product-detail-container {
@@ -173,4 +244,12 @@
     .product-info-box { padding: 0 8%; padding-top: 0; }
     .detail-name { font-size: 1.4rem; letter-spacing: 6px; }
     .slider-arrow { width: 40px; height: 40px; font-size: 1rem; }
+
+    .lightbox-close {
+        top: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
 }
