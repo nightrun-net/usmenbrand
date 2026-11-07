@@ -1,7 +1,4 @@
-/* ==========================================================
-   US MEN BRAND — BLACK / WHITE (NO GOLD)
-   Original-inspired Segoe UI typography | Responsive, 2026
-   ========================================================== */
+
 :root{--black:#000;--white:#fff;--muted:#a9a9a9;--soft:#d3d3d3;--panel:#0a0a0a;--line:rgba(255,255,255,.15);--ease:cubic-bezier(.2,.8,.2,1);color-scheme:dark}
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:100px}
@@ -95,24 +92,75 @@ button,a{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-vi
 @media(max-height:625px) and (max-width:800px){.hero{min-height:560px}.hero-identity img{height:33px}.hero-intro{display:none}.hero-inner{padding-bottom:77px}.nav-menu{padding-top:78px}.overlay-links{gap:0}.overlay-links a{padding:3px 0;font-size:clamp(22px,5vh,35px)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.has-js .reveal{opacity:1;transform:none}}
 
-/* ===========================================================
-   USER-REQUESTED MINIMAL FIXES ONLY — 20 October 2026
-   =========================================================== */
-/* Brand name as one line in header AND footer */
+
+
 .brand-wordmark{white-space:nowrap;display:inline-block;line-height:1.2;letter-spacing:.12em}
 .footer-brand .brand-wordmark{white-space:nowrap}
-/* Extra menu categories: compact to preserve the original 50px navbar */
+
 .desktop-links{gap:clamp(10px,1.35vw,24px)}
 .desktop-links a{font-size:9px;letter-spacing:.11em}
 @media(max-width:1250px){.desktop-links{display:none}}
-/* Hero heading: exactly one line, larger genuine US logo */
+
 .hero h1{white-space:nowrap;font-size:clamp(24px,3.15vw,48px);letter-spacing:.035em;line-height:1.2}
 .hero-identity img{width:65px;height:88px}
-/* Eliminate any visual/play-control remnants while retaining autoplay video */
+
+/* FIX: Product Card Arrow - iOS / Android / Desktop */
+
+.product-card-visual .product-card-arrow {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #101010 !important;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+
+  font-size: 0 !important;
+  line-height: 0;
+  color: transparent !important;
+  overflow: hidden;
+}
+
+/* Hide old emoji or icon */
+.product-card-visual .product-card-arrow > * {
+  display: none !important;
+}
+
+/* New white SVG arrow */
+.product-card-visual .product-card-arrow::after {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 19L19 5M9 5h10v10'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Responsive Mobile & iPad */
+@media (max-width: 768px) {
+  .product-card-visual .product-card-arrow {
+    width: 29px;
+    height: 29px;
+    right: 9px;
+    bottom: 9px;
+  }
+
+  .product-card-visual .product-card-arrow::after {
+    width: 15px;
+    height: 15px;
+  }
+}
+
 #video-toggle{display:none!important}
-/* Signature taken from the fourth supplied image; after final About paragraph */
+
 .story-signature{display:block;width:min(100%,390px);height:auto;margin:22px auto 0;object-fit:contain}
-/* Full-screen overlay can scroll on smaller height phones with seven nav links */
+
 .overlay-links{gap:clamp(3px,1vh,12px);padding-block:14px}
 .overlay-links a{font-size:clamp(19px,3.25vw,41px);line-height:1.16;padding:4px 10px}
 @media(max-width:800px){
@@ -177,16 +225,13 @@ button,a{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-vi
 @media(max-width:520px){.collection-group-heading{margin-top:19px;padding-bottom:11px}.collection-group-heading h3{font-size:12px}.collection-group-heading span{font-size:8px}.product-card-original .card-serial{top:8px;left:7px;font-size:7px;padding:5px 7px}.product-card-original .product-mini-logo{right:8px;top:8px;width:26px;height:26px;padding:5px}.collection-section .product-grid{gap:19px 10px}}
 @media(max-width:370px){.collection-section .product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
-/* =============================================================
-   OWNER-REQUESTED PRICES / SIGNATURE / VITO CREDIT / RESPONSIVE
-   All original imagery, layout, tiger video, and typography kept.
-   ============================================================= */
-/* Price below product code on colour cards; no layout change to the photo. */
+
+
 .product-card-bottom .product-card-price{display:block;margin:9px 0 0;color:#fff;font-size:13px;font-weight:450;letter-spacing:.045em;line-height:1.4;white-space:nowrap}
 .collection-group-heading span{white-space:nowrap}
-/* Signature slightly smaller on all display sizes, while keeping the aspect ratio. */
+
 .story-signature{width:min(100%,285px);max-width:100%;height:auto}
-/* Place the supplied VITO logo on the existing footer bottom line. */
+
 .footer-bottom{flex-wrap:wrap;min-width:0}
 .footer-bottom>span{min-width:0}
 .footer-credit{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-width:0;white-space:nowrap;flex-shrink:0}
@@ -234,7 +279,7 @@ button,a{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-vi
   .footer-social{gap:12px}
 }
 
-/* Uniform vector arrows: prevent iOS Safari converting arrow characters into blue emoji. */
+
 .ui-icon{display:inline-block;width:1.12em;height:1.12em;min-width:0;min-height:0;flex:0 0 auto;vertical-align:-.16em;color:inherit;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 .product-card-arrow .ui-icon{width:18px;height:18px;vertical-align:middle}
 .product-card-explore .ui-icon{width:1em;height:1em;vertical-align:-.14em}
