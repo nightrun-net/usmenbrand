@@ -1,9 +1,0 @@
-/* US MEN BRAND: single-line footer label.
-   This rule is ALREADY INCLUDED in css/style.css.
-   Keep for reference or copy it into another version of the site. */
-.footer-brand .brand-wordmark {
-  display: inline-block;
-  white-space: nowrap;
-  line-height: 1.2;
-  letter-spacing: .12em;
-}
