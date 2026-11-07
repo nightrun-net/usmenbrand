@@ -1,0 +1,817 @@
+US MEN BRAND — COMPLETE SOURCE CODE — November 2026
+
+
+============================== index.html ==============================
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#000000">
+  <meta name="description" content="US MEN BRAND. Sunglasses, bracelets, perfume and distinctive accessories. Wear Your Legacy.">
+  <title>US MEN BRAND — Wear Your Legacy</title>
+  <link rel="icon" href="assets/us-logo.png" type="image/png"><link rel="preload" href="assets/tiger-poster.jpg" as="image"><link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <header class="site-header" id="site-header">
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a class="brand-lockup" href="index.html" aria-label="US MEN BRAND — Home"><img class="brand-logo" src="assets/us-logo.png" alt=""><span class="brand-wordmark">US MEN BRAND</span></a>
+      <div class="desktop-links" aria-label="Desktop navigation"><a class="is-current" href="index.html">HOME</a><a href="#collection">COLLECTION</a><a href="about.html">ABOUT</a><a href="#contact">CONTACT</a><a href="sunglasses.html">SUNGLASSES</a><a href="bracelets.html">BRACELETS</a><a href="perfume.html">PERFUME</a></div>
+      <div class="header-actions"><a class="header-contact" href="https://wa.me/447352935273" target="_blank" rel="noopener noreferrer">LET'S TALK <span aria-hidden="true">↗</span></a><button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span><span></span></button></div>
+    </nav>
+  </header>
+  <div class="nav-menu" id="nav-menu" aria-hidden="true">
+    <div class="overlay-head"><img src="assets/us-logo.png" alt="US logo"><span>US MEN BRAND</span><span>THE COLLECTION / 2026</span></div>
+    <nav class="overlay-links" aria-label="Full screen menu"><a href="index.html"><small>01 /</small> HOME</a><a href="index.html#collection"><small>02 /</small> COLLECTION</a><a href="about.html"><small>03 /</small> ABOUT US</a><a href="index.html#contact"><small>04 /</small> CONTACT</a><a href="sunglasses.html"><small>05 /</small> SUNGLASSES</a><a href="bracelets.html"><small>06 /</small> BRACELETS</a><a href="perfume.html"><small>07 /</small> PERFUME</a></nav>
+    <div class="overlay-bottom"><div class="overlay-ident"><img src="assets/us-logo.png" alt=""><span>US MEN BRAND<br><small>WEAR YOUR LEGACY</small></span></div><div class="overlay-social"><a href="https://www.instagram.com/usmenbrand" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="https://www.tiktok.com/@usmenbrand" target="_blank" rel="noopener noreferrer">TIKTOK ↗</a></div></div>
+  </div>
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-media" data-parallax>
+        <video id="hero-video" class="hero-video" autoplay muted loop playsinline webkit-playsinline preload="metadata" poster="assets/tiger-poster.jpg" aria-hidden="true"><source src="assets/tiger-hero.mp4" type="video/mp4"></video>
+      </div><div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-inner container"><div class="hero-content reveal">
+        <div class="hero-identity"><img src="assets/us-logo.png" alt=""><span>US MEN BRAND</span></div>
+        <p class="hero-eyebrow">THE ESSENCE OF INDIVIDUAL STYLE</p>
+        <h1 id="hero-title">WEAR YOUR LEGACY.</h1>
+        <p class="hero-categories"><a href="sunglasses.html">SUNGLASSES</a> <span>·</span> <a href="bracelets.html">BRACELETS</a> <span>·</span> <a href="perfume.html">PERFUME</a></p>
+        <p class="hero-intro">Designed for the ones who create their own story.</p>
+        <div class="hero-buttons"><a class="btn btn-white" href="#collection">EXPLORE COLLECTION <span>↗</span></a><a class="btn btn-outline" href="about.html">OUR STORY <span>↗</span></a></div>
+      </div></div>
+      <div class="hero-floor container"><span>US MEN BRAND · EST. 2026</span><a href="#signature">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section id="signature" class="signature section-pad"><div class="container section-center reveal"><img class="section-logo" src="assets/us-logo.png" alt="US MEN BRAND logo"><span class="micro-label">US MEN BRAND</span><h2>WEAR YOUR LEGACY</h2><div class="tiny-rule"></div><p>Quiet confidence. Refined details. A distinctive identity.<br>Every piece tells a story — make it yours.</p></div>
+      <div class="container pillars"><div class="pillar reveal"><span>01</span><h3>MADE FOR PRESENCE</h3><p>Considered design. Unmistakable style.</p></div><div class="pillar reveal"><span>02</span><h3>TIMELESS BY DESIGN</h3><p>Wear today. Remember forever.</p></div><div class="pillar reveal"><span>03</span><h3>YOUR OWN LEGACY</h3><p>Not a trend. A statement of character.</p></div></div>
+    </section>
+
+    <section id="collection" class="collection-section section-pad" aria-labelledby="collection-title"><div class="container"><div class="section-center reveal collection-heading"><img class="section-logo" src="assets/us-logo.png" alt=""><span class="micro-label">US MEN BRAND · THE COLLECTION</span><h2 id="collection-title">DISCOVER THE COLLECTION</h2><div class="tiny-rule"></div><p>Chosen with purpose. Worn with confidence.</p></div>
+      <div class="product-grid" id="product-grid"></div>
+      <div class="collection-end reveal"><img src="assets/us-logo.png" alt=""><p>US MEN BRAND <span>·</span> WEAR YOUR LEGACY</p></div></div>
+    </section>
+
+    <section class="cinematic-divider" aria-label="Wear your legacy"><img src="assets/tiger-front.jpg" loading="lazy" alt="Black tiger looking straight ahead"><div class="cinematic-scrim"></div><div class="cinematic-center reveal"><img src="assets/us-logo.png" alt=""><span>US MEN BRAND</span><h2>WEAR YOUR LEGACY</h2><p>LET YOUR PRESENCE SPEAK.</p><a class="btn btn-outline" href="about.html">DISCOVER OUR STORY <span>↗</span></a></div></section>
+
+    <section class="contact-section section-pad" id="contact"><div class="container section-center reveal"><img class="section-logo" src="assets/us-logo.png" alt=""><span class="micro-label">WE'D LOVE TO HEAR FROM YOU</span><h2>LET'S CONNECT</h2><div class="tiny-rule"></div><p>Questions about a piece or your next signature accessory?<br>We're one message away.</p><a class="btn btn-white" href="https://wa.me/447352935273" target="_blank" rel="noopener noreferrer">WHATSAPP US <span>↗</span></a><a class="email" href="mailto:usmenbrand@info.com">usmenbrand@info.com</a></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-main"><a class="brand-lockup footer-brand" href="index.html"><img class="brand-logo" src="assets/us-logo.png" alt=""><span class="brand-wordmark">US MEN BRAND</span></a><div class="footer-center">WEAR YOUR LEGACY<span>US MEN BRAND</span></div><div class="footer-social"><a href="https://www.instagram.com/usmenbrand" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="https://www.tiktok.com/@usmenbrand" target="_blank" rel="noopener noreferrer">TIKTOK ↗</a><a href="mailto:usmenbrand@info.com">EMAIL ↗</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> US MEN BRAND. ALL RIGHTS RESERVED.</span><div class="footer-credit"><span>CREATED BY</span><img src="assets/vito-logo.png" alt="VITO" width="104" height="30" loading="lazy"></div><a href="#home">BACK TO TOP ↑</a></div></footer>
+  <script src="js/product.js" defer></script><script src="js/catalog.js" defer></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script><script src="js/main.js" defer></script>
+</body></html>
+
+
+============================== about.html ==============================
+
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#000000"><meta name="description" content="The story of US MEN BRAND — Wear Your Legacy."><title>Our Story — US MEN BRAND</title><link rel="icon" href="assets/us-logo.png"><link rel="stylesheet" href="css/style.css"></head><body data-page="about"><div class="scroll-progress" aria-hidden="true"></div>
+<header class="site-header" id="site-header"><nav class="nav-shell" aria-label="Main navigation"><a class="brand-lockup" href="index.html" aria-label="US MEN BRAND Home"><img class="brand-logo" src="assets/us-logo.png" alt=""><span class="brand-wordmark">US MEN BRAND</span></a><div class="desktop-links"><a href="index.html">HOME</a><a href="index.html#collection">COLLECTION</a><a href="about.html" class="is-current">ABOUT</a><a href="#contact">CONTACT</a><a href="sunglasses.html">SUNGLASSES</a><a href="bracelets.html">BRACELETS</a><a href="perfume.html">PERFUME</a></div><div class="header-actions"><a class="header-contact" href="https://wa.me/447352935273" target="_blank" rel="noopener noreferrer">LET'S TALK ↗</a><button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span><span></span></button></div></nav></header>
+<div class="nav-menu" id="nav-menu" aria-hidden="true"><div class="overlay-head"><img src="assets/us-logo.png" alt="US logo"><span>US MEN BRAND</span><span>THE COLLECTION / 2026</span></div><nav class="overlay-links" aria-label="Full screen menu"><a href="index.html"><small>01 /</small> HOME</a><a href="index.html#collection"><small>02 /</small> COLLECTION</a><a href="about.html"><small>03 /</small> ABOUT US</a><a href="#contact"><small>04 /</small> CONTACT</a><a href="sunglasses.html"><small>05 /</small> SUNGLASSES</a><a href="bracelets.html"><small>06 /</small> BRACELETS</a><a href="perfume.html"><small>07 /</small> PERFUME</a></nav><div class="overlay-bottom"><div class="overlay-ident"><img src="assets/us-logo.png" alt=""><span>US MEN BRAND<br><small>WEAR YOUR LEGACY</small></span></div><div class="overlay-social"><a href="https://www.instagram.com/usmenbrand" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="https://www.tiktok.com/@usmenbrand" target="_blank" rel="noopener noreferrer">TIKTOK ↗</a></div></div></div>
+<main><section class="page-hero about-hero"><img class="page-hero-image" src="assets/tiger-front.jpg" alt="Black tiger portrait"><div class="page-hero-shade"></div><div class="page-hero-content reveal"><img src="assets/us-logo.png" alt=""><span>US MEN BRAND</span><h1>WEAR YOUR LEGACY</h1><p>OUR STORY. OUR PURPOSE.</p></div></section><section class="section-pad about-story"><div class="container"><div class="section-center reveal"><img class="section-logo" src="assets/us-logo.png" alt=""><span class="micro-label">01 · THE STORY</span><h2>THE MAKING OF A LEGACY</h2><div class="tiny-rule"></div></div><div class="story-prose reveal"><p class="lead">Legacy is not given. It is built — one choice, one moment, one piece at a time.</p><p>At US, we create for the dreamers who became doers. For the ones who rose quietly, worked relentlessly, and arrived with something to show for it.</p><p>Our jewelry is not decoration. It is documentation — of your journey, your strength, and everything you refused to give up on. Every collection is born from the belief that the most powerful thing you can wear is your own story.</p><p>Shaped by timeless artistry, and designed for those who have earned the right to shine. You didn't get here by accident. You built this. You lived this. Now wear it.</p><p>Because a legacy this powerful deserves to be seen.</p><strong>WEAR YOUR LEGACY.</strong><img class="story-signature" src="assets/us-signature.png" alt="Umed Sami signature, Wear Your Legacy" loading="lazy"></div></div></section><section class="about-visual"><img src="assets/tiger-side.jpg" loading="lazy" alt="Black tiger in profile"></section><section class="contact-section section-pad" id="contact"><div class="container section-center reveal"><img class="section-logo" src="assets/us-logo.png" alt=""><span class="micro-label">US MEN BRAND</span><h2>LET'S CONNECT</h2><div class="tiny-rule"></div><p>Have a question about our collection?<br>We're one message away.</p><a class="btn btn-white" href="https://wa.me/447352935273" target="_blank" rel="noopener noreferrer">WHATSAPP US <span>↗</span></a><a class="email" href="mailto:usmenbrand@info.com">usmenbrand@info.com</a></div></section></main>
+<footer class="site-footer"><div class="container footer-main"><a class="brand-lockup footer-brand" href="index.html"><img class="brand-logo" src="assets/us-logo.png" alt=""><span class="brand-wordmark">US MEN BRAND</span></a><div class="footer-center">WEAR YOUR LEGACY<span>US MEN BRAND</span></div><div class="footer-social"><a href="https://www.instagram.com/usmenbrand" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="https://www.tiktok.com/@usmenbrand" target="_blank" rel="noopener noreferrer">TIKTOK ↗</a><a href="mailto:usmenbrand@info.com">EMAIL ↗</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> US MEN BRAND. ALL RIGHTS RESERVED.</span><div class="footer-credit"><span>CREATED BY</span><img src="assets/vito-logo.png" alt="VITO" width="104" height="30" loading="lazy"></div><a href="index.html">BACK TO HOME ↑</a></div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script><script src="js/main.js" defer></script></body></html>
+
+
+============================== product.html ==============================
+
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#000000"><meta name="description" content="Explore US MEN BRAND accessories. Wear Your Legacy."><title>Product Details — US MEN BRAND</title><link rel="icon" href="assets/us-logo.png"><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/product.css"></head><body data-page="product"><div class="scroll-progress" aria-hidden="true"></div>
+<header class="site-header" id="site-header"><nav class="nav-shell" aria-label="Main navigation"><a class="brand-lockup" href="index.html" aria-label="US MEN BRAND Home"><img class="brand-logo" src="assets/us-logo.png" alt=""><span class="brand-wordmark">US MEN BRAND</span></a><div class="desktop-links"><a href="index.html">HOME</a><a href="index.html#collection" class="is-current">COLLECTION</a><a href="about.html">ABOUT</a><a href="#contact">CONTACT</a><a href="sunglasses.html">SUNGLASSES</a><a href="bracelets.html">BRACELETS</a><a href="perfume.html">PERFUME</a></div><div class="header-actions"><a class="header-contact" href="https://wa.me/447352935273" target="_blank" rel="noopener noreferrer">LET'S TALK ↗</a><button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span><span></span></button></div></nav></header>
+<div class="nav-menu" id="nav-menu" aria-hidden="true"><div class="overlay-head"><img src="assets/us-logo.png" alt="US logo"><span>US MEN BRAND</span><span>THE COLLECTION / 2026</span></div><nav class="overlay-links" aria-label="Full screen menu"><a href="index.html"><small>01 /</small> HOME</a><a href="index.html#collection"><small>02 /</small> COLLECTION</a><a href="about.html"><small>03 /</small> ABOUT US</a><a href="#contact"><small>04 /</small> CONTACT</a><a href="sunglasses.html"><small>05 /</small> SUNGLASSES</a><a href="bracelets.html"><small>06 /</small> BRACELETS</a><a href="perfume.html"><small>07 /</small> PERFUME</a></nav><div class="overlay-bottom"><div class="overlay-ident"><img src="assets/us-logo.png" alt=""><span>US MEN BRAND<br><small>WEAR YOUR LEGACY</small></span></div><div class="overlay-social"><a href="https://www.instagram.com/usmenbrand" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="https://www.tiktok.com/@usmenbrand" target="_blank" rel="noopener noreferrer">TIKTOK ↗</a></div></div></div>
+<main><section class="product-page section-pad"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">HOME</a><span>/</span><a href="index.html#collection">COLLECTION</a><span>/</span><span id="crumb-current">PRODUCT</span></nav><div class="product-layout"><div class="product-gallery"><div class="gallery-stage" id="gallery-stage"><img id="gallery-main" src="assets/eyewear-original/04.webp" alt="US Men Brand product" tabindex="0"><div class="gallery-top-label"><img src="assets/us-logo.png" alt=""><span>US MEN BRAND</span></div><button type="button" class="gallery-zoom" id="gallery-zoom" aria-label="Enlarge image">⤢</button><button class="gallery-arrow gallery-prev" id="gallery-prev" type="button" aria-label="Previous image">←</button><button class="gallery-arrow gallery-next" id="gallery-next" type="button" aria-label="Next image">→</button><span class="gallery-counter" id="gallery-counter">01 / 01</span></div><div class="gallery-thumbs" id="gallery-thumbs" aria-label="Product images"></div></div><div class="product-details"><div class="detail-identity"><img src="assets/us-logo.png" alt=""><span>US MEN BRAND</span></div><p class="micro-label" id="p-category">THE COLLECTION</p><h1 id="p-name">LOADING...</h1><p class="product-price-detail" id="p-price">—</p><div class="detail-rule"></div><div class="variant-selector"><p class="detail-overline">CHOOSE COLOUR <span>AVAILABLE FINISHES</span></p><div class="variant-options" id="variant-options" role="group" aria-label="Choose product colour"></div><p class="selected-code" id="p-selected-code">Code: —</p></div><p class="detail-overline">ABOUT THE PIECE <span>01/02</span></p><p class="product-description" id="p-desc"></p><div class="details-specs"><p class="detail-overline">SPECIFICATIONS <span>02/02</span></p><ul id="p-specs"></ul></div><div class="product-cta"><a class="btn btn-white" id="inquire-btn" href="https://wa.me/447352935273" target="_blank" rel="noopener noreferrer">ENQUIRE ON WHATSAPP <span>↗</span></a><p>For questions, availability and ordering details.</p></div><div class="product-promise"><img src="assets/us-logo.png" alt=""> US MEN BRAND <span>·</span> WEAR YOUR LEGACY</div></div></div></div></section><section class="related-products section-pad"><div class="container"><div class="section-center reveal related-heading"><img class="section-logo" src="assets/us-logo.png" alt=""><span class="micro-label">US MEN BRAND · DISCOVER MORE</span><h2>YOU MAY ALSO LIKE</h2><div class="tiny-rule"></div><a class="text-link" href="index.html#collection">VIEW ALL PRODUCTS ↗</a></div><div class="product-grid related-grid" id="related-grid"></div></div></section><section class="contact-section section-pad" id="contact"><div class="container section-center reveal"><img class="section-logo" src="assets/us-logo.png" alt=""><span class="micro-label">US MEN BRAND</span><h2>LET'S CONNECT</h2><div class="tiny-rule"></div><p>We're one message away.</p><a class="btn btn-white" href="https://wa.me/447352935273" target="_blank" rel="noopener noreferrer">WHATSAPP US <span>↗</span></a></div></section></main>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged product image" hidden><button type="button" id="lightbox-close" class="lightbox-close" aria-label="Close enlarged image">×</button><img id="lightbox-image" alt="Enlarged product"></div>
+<footer class="site-footer"><div class="container footer-main"><a class="brand-lockup footer-brand" href="index.html"><img class="brand-logo" src="assets/us-logo.png" alt=""><span class="brand-wordmark">US MEN BRAND</span></a><div class="footer-center">WEAR YOUR LEGACY<span>US MEN BRAND</span></div><div class="footer-social"><a href="https://www.instagram.com/usmenbrand" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="https://www.tiktok.com/@usmenbrand" target="_blank" rel="noopener noreferrer">TIKTOK ↗</a><a href="mailto:usmenbrand@info.com">EMAIL ↗</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> US MEN BRAND. ALL RIGHTS RESERVED.</span><div class="footer-credit"><span>CREATED BY</span><img src="assets/vito-logo.png" alt="VITO" width="104" height="30" loading="lazy"></div><a href="index.html">BACK TO HOME ↑</a></div></footer>
+<script src="js/product.js" defer></script><script src="js/catalog.js" defer></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script><script src="js/main.js" defer></script><script src="js/product-page.js" defer></script></body></html>
+
+
+============================== sunglasses.html ==============================
+
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#000"><title>Sunglasses — Coming Soon | US MEN BRAND</title><link rel="icon" href="assets/us-logo.png"><link rel="preload" href="assets/tiger-poster.jpg" as="image"><link rel="stylesheet" href="css/style.css"></head>
+<body data-page="soon"><div class="scroll-progress" aria-hidden="true"></div>
+  <header class="site-header" id="site-header">
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a class="brand-lockup" href="index.html" aria-label="US MEN BRAND — Home"><img class="brand-logo" src="assets/us-logo.png" alt=""><span class="brand-wordmark">US MEN BRAND</span></a>
+      <div class="desktop-links" aria-label="Desktop navigation"><a class="is-current" href="index.html">HOME</a><a href="#collection">COLLECTION</a><a href="about.html">ABOUT</a><a href="#contact">CONTACT</a><a href="sunglasses.html">SUNGLASSES</a><a href="bracelets.html">BRACELETS</a><a href="perfume.html">PERFUME</a></div>
+      <div class="header-actions"><a class="header-contact" href="https://wa.me/447352935273" target="_blank" rel="noopener noreferrer">LET'S TALK <span aria-hidden="true">↗</span></a><button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span><span></span></button></div>
+    </nav>
+  </header>
+  <div class="nav-menu" id="nav-menu" aria-hidden="true">
+    <div class="overlay-head"><img src="assets/us-logo.png" alt="US logo"><span>US MEN BRAND</span><span>THE COLLECTION / 2026</span></div>
+    <nav class="overlay-links" aria-label="Full screen menu"><a href="index.html"><small>01 /</small> HOME</a><a href="index.html#collection"><small>02 /</small> COLLECTION</a><a href="about.html"><small>03 /</small> ABOUT US</a><a href="index.html#contact"><small>04 /</small> CONTACT</a><a href="sunglasses.html"><small>05 /</small> SUNGLASSES</a><a href="bracelets.html"><small>06 /</small> BRACELETS</a><a href="perfume.html"><small>07 /</small> PERFUME</a></nav>
+    <div class="overlay-bottom"><div class="overlay-ident"><img src="assets/us-logo.png" alt=""><span>US MEN BRAND<br><small>WEAR YOUR LEGACY</small></span></div><div class="overlay-social"><a href="https://www.instagram.com/usmenbrand" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="https://www.tiktok.com/@usmenbrand" target="_blank" rel="noopener noreferrer">TIKTOK ↗</a></div></div>
+  </div>
+
+<main><section class="coming-hero" aria-labelledby="coming-heading">
+ <div class="coming-media"><img src="assets/tiger-side.jpg" alt="Black tiger background"></div><div class="coming-scrim" aria-hidden="true"></div>
+ <div class="coming-inner reveal"><img src="assets/us-logo.png" alt="US MEN BRAND logo" class="coming-logo"><span class="micro-label">US MEN BRAND</span><p class="coming-category">SUNGLASSES</p><h1 id="coming-heading">COMING SOON.</h1><p class="coming-copy">A new chapter of the collection is on its way.</p><a class="btn btn-outline" href="index.html">BACK TO HOME <span>↗</span></a></div>
+ <div class="coming-foot">US MEN BRAND <span>·</span> WEAR YOUR LEGACY</div>
+ </section></main>
+  <footer class="site-footer"><div class="container footer-main"><a class="brand-lockup footer-brand" href="index.html"><img class="brand-logo" src="assets/us-logo.png" alt=""><span class="brand-wordmark">US MEN BRAND</span></a><div class="footer-center">WEAR YOUR LEGACY<span>US MEN BRAND</span></div><div class="footer-social"><a href="https://www.instagram.com/usmenbrand" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="https://www.tiktok.com/@usmenbrand" target="_blank" rel="noopener noreferrer">TIKTOK ↗</a><a href="mailto:usmenbrand@info.com">EMAIL ↗</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> US MEN BRAND. ALL RIGHTS RESERVED.</span><div class="footer-credit"><span>CREATED BY</span><img src="assets/vito-logo.png" alt="VITO" width="104" height="30" loading="lazy"></div><a href="#home">BACK TO TOP ↑</a></div></footer>
+
+<script src="js/main.js" defer></script></body></html>
+
+
+============================== bracelets.html ==============================
+
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#000"><title>Bracelets — Coming Soon | US MEN BRAND</title><link rel="icon" href="assets/us-logo.png"><link rel="preload" href="assets/tiger-poster.jpg" as="image"><link rel="stylesheet" href="css/style.css"></head>
+<body data-page="soon"><div class="scroll-progress" aria-hidden="true"></div>
+  <header class="site-header" id="site-header">
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a class="brand-lockup" href="index.html" aria-label="US MEN BRAND — Home"><img class="brand-logo" src="assets/us-logo.png" alt=""><span class="brand-wordmark">US MEN BRAND</span></a>
+      <div class="desktop-links" aria-label="Desktop navigation"><a class="is-current" href="index.html">HOME</a><a href="#collection">COLLECTION</a><a href="about.html">ABOUT</a><a href="#contact">CONTACT</a><a href="sunglasses.html">SUNGLASSES</a><a href="bracelets.html">BRACELETS</a><a href="perfume.html">PERFUME</a></div>
+      <div class="header-actions"><a class="header-contact" href="https://wa.me/447352935273" target="_blank" rel="noopener noreferrer">LET'S TALK <span aria-hidden="true">↗</span></a><button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span><span></span></button></div>
+    </nav>
+  </header>
+  <div class="nav-menu" id="nav-menu" aria-hidden="true">
+    <div class="overlay-head"><img src="assets/us-logo.png" alt="US logo"><span>US MEN BRAND</span><span>THE COLLECTION / 2026</span></div>
+    <nav class="overlay-links" aria-label="Full screen menu"><a href="index.html"><small>01 /</small> HOME</a><a href="index.html#collection"><small>02 /</small> COLLECTION</a><a href="about.html"><small>03 /</small> ABOUT US</a><a href="index.html#contact"><small>04 /</small> CONTACT</a><a href="sunglasses.html"><small>05 /</small> SUNGLASSES</a><a href="bracelets.html"><small>06 /</small> BRACELETS</a><a href="perfume.html"><small>07 /</small> PERFUME</a></nav>
+    <div class="overlay-bottom"><div class="overlay-ident"><img src="assets/us-logo.png" alt=""><span>US MEN BRAND<br><small>WEAR YOUR LEGACY</small></span></div><div class="overlay-social"><a href="https://www.instagram.com/usmenbrand" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="https://www.tiktok.com/@usmenbrand" target="_blank" rel="noopener noreferrer">TIKTOK ↗</a></div></div>
+  </div>
+
+<main><section class="coming-hero" aria-labelledby="coming-heading">
+ <div class="coming-media"><img src="assets/tiger-side.jpg" alt="Black tiger background"></div><div class="coming-scrim" aria-hidden="true"></div>
+ <div class="coming-inner reveal"><img src="assets/us-logo.png" alt="US MEN BRAND logo" class="coming-logo"><span class="micro-label">US MEN BRAND</span><p class="coming-category">BRACELETS</p><h1 id="coming-heading">COMING SOON.</h1><p class="coming-copy">A new chapter of the collection is on its way.</p><a class="btn btn-outline" href="index.html">BACK TO HOME <span>↗</span></a></div>
+ <div class="coming-foot">US MEN BRAND <span>·</span> WEAR YOUR LEGACY</div>
+ </section></main>
+  <footer class="site-footer"><div class="container footer-main"><a class="brand-lockup footer-brand" href="index.html"><img class="brand-logo" src="assets/us-logo.png" alt=""><span class="brand-wordmark">US MEN BRAND</span></a><div class="footer-center">WEAR YOUR LEGACY<span>US MEN BRAND</span></div><div class="footer-social"><a href="https://www.instagram.com/usmenbrand" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="https://www.tiktok.com/@usmenbrand" target="_blank" rel="noopener noreferrer">TIKTOK ↗</a><a href="mailto:usmenbrand@info.com">EMAIL ↗</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> US MEN BRAND. ALL RIGHTS RESERVED.</span><div class="footer-credit"><span>CREATED BY</span><img src="assets/vito-logo.png" alt="VITO" width="104" height="30" loading="lazy"></div><a href="#home">BACK TO TOP ↑</a></div></footer>
+
+<script src="js/main.js" defer></script></body></html>
+
+
+============================== perfume.html ==============================
+
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#000"><title>Perfume — Coming Soon | US MEN BRAND</title><link rel="icon" href="assets/us-logo.png"><link rel="preload" href="assets/tiger-poster.jpg" as="image"><link rel="stylesheet" href="css/style.css"></head>
+<body data-page="soon"><div class="scroll-progress" aria-hidden="true"></div>
+  <header class="site-header" id="site-header">
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a class="brand-lockup" href="index.html" aria-label="US MEN BRAND — Home"><img class="brand-logo" src="assets/us-logo.png" alt=""><span class="brand-wordmark">US MEN BRAND</span></a>
+      <div class="desktop-links" aria-label="Desktop navigation"><a class="is-current" href="index.html">HOME</a><a href="#collection">COLLECTION</a><a href="about.html">ABOUT</a><a href="#contact">CONTACT</a><a href="sunglasses.html">SUNGLASSES</a><a href="bracelets.html">BRACELETS</a><a href="perfume.html">PERFUME</a></div>
+      <div class="header-actions"><a class="header-contact" href="https://wa.me/447352935273" target="_blank" rel="noopener noreferrer">LET'S TALK <span aria-hidden="true">↗</span></a><button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span><span></span></button></div>
+    </nav>
+  </header>
+  <div class="nav-menu" id="nav-menu" aria-hidden="true">
+    <div class="overlay-head"><img src="assets/us-logo.png" alt="US logo"><span>US MEN BRAND</span><span>THE COLLECTION / 2026</span></div>
+    <nav class="overlay-links" aria-label="Full screen menu"><a href="index.html"><small>01 /</small> HOME</a><a href="index.html#collection"><small>02 /</small> COLLECTION</a><a href="about.html"><small>03 /</small> ABOUT US</a><a href="index.html#contact"><small>04 /</small> CONTACT</a><a href="sunglasses.html"><small>05 /</small> SUNGLASSES</a><a href="bracelets.html"><small>06 /</small> BRACELETS</a><a href="perfume.html"><small>07 /</small> PERFUME</a></nav>
+    <div class="overlay-bottom"><div class="overlay-ident"><img src="assets/us-logo.png" alt=""><span>US MEN BRAND<br><small>WEAR YOUR LEGACY</small></span></div><div class="overlay-social"><a href="https://www.instagram.com/usmenbrand" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="https://www.tiktok.com/@usmenbrand" target="_blank" rel="noopener noreferrer">TIKTOK ↗</a></div></div>
+  </div>
+
+<main><section class="coming-hero" aria-labelledby="coming-heading">
+ <div class="coming-media"><img src="assets/tiger-side.jpg" alt="Black tiger background"></div><div class="coming-scrim" aria-hidden="true"></div>
+ <div class="coming-inner reveal"><img src="assets/us-logo.png" alt="US MEN BRAND logo" class="coming-logo"><span class="micro-label">US MEN BRAND</span><p class="coming-category">PERFUME</p><h1 id="coming-heading">COMING SOON.</h1><p class="coming-copy">A new chapter of the collection is on its way.</p><a class="btn btn-outline" href="index.html">BACK TO HOME <span>↗</span></a></div>
+ <div class="coming-foot">US MEN BRAND <span>·</span> WEAR YOUR LEGACY</div>
+ </section></main>
+  <footer class="site-footer"><div class="container footer-main"><a class="brand-lockup footer-brand" href="index.html"><img class="brand-logo" src="assets/us-logo.png" alt=""><span class="brand-wordmark">US MEN BRAND</span></a><div class="footer-center">WEAR YOUR LEGACY<span>US MEN BRAND</span></div><div class="footer-social"><a href="https://www.instagram.com/usmenbrand" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="https://www.tiktok.com/@usmenbrand" target="_blank" rel="noopener noreferrer">TIKTOK ↗</a><a href="mailto:usmenbrand@info.com">EMAIL ↗</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> US MEN BRAND. ALL RIGHTS RESERVED.</span><div class="footer-credit"><span>CREATED BY</span><img src="assets/vito-logo.png" alt="VITO" width="104" height="30" loading="lazy"></div><a href="#home">BACK TO TOP ↑</a></div></footer>
+
+<script src="js/main.js" defer></script></body></html>
+
+
+============================== css/style.css ==============================
+
+/* ==========================================================
+   US MEN BRAND — BLACK / WHITE (NO GOLD)
+   Original-inspired Segoe UI typography | Responsive, 2026
+   ========================================================== */
+:root{--black:#000;--white:#fff;--muted:#a9a9a9;--soft:#d3d3d3;--panel:#0a0a0a;--line:rgba(255,255,255,.15);--ease:cubic-bezier(.2,.8,.2,1);color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{margin:0;background:#000;color:#fff;font-family:'Segoe UI',Tahoma,Arial,sans-serif;font-weight:350;letter-spacing:.01em;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body.menu-open,body.lightbox-open{overflow:hidden}
+a{color:inherit;text-decoration:none}button{font:inherit}img,video{display:block;max-width:100%}
+button,a{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible{outline:2px solid #fff;outline-offset:5px}
+::selection{background:#fff;color:#000}
+.container{width:min(100% - 112px,1400px);margin-inline:auto}
+.section-pad{padding-block:105px}
+.scroll-progress{position:fixed;z-index:1001;top:0;left:0;right:0;height:2px;background:#fff;transform:scaleX(0);transform-origin:left;pointer-events:none}
+/* Wide floating, radius-50 navigation */
+.site-header{position:fixed;z-index:1000;top:0;left:0;right:0;padding:17px 22px;transition:padding .35s}
+.nav-shell{height:68px;width:100%;max-width:1900px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 23px;background:rgba(4,4,4,.68);border:1px solid rgba(255,255,255,.24);border-radius:50px;backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);box-shadow:0 6px 42px rgba(0,0,0,.24)}
+.site-header.is-scrolled .nav-shell{background:rgba(0,0,0,.94);border-color:rgba(255,255,255,.23)}
+.brand-lockup{display:flex;align-items:center;gap:12px;min-width:0;flex-shrink:0}
+.brand-logo{height:42px;width:29px;object-fit:contain;filter:drop-shadow(0 0 1px rgba(255,255,255,.35))}
+.brand-wordmark{font-size:12px;font-weight:550;letter-spacing:.18em;white-space:nowrap;line-height:1.2}
+.brand-wordmark small{display:block;font-size:8px;font-weight:350;letter-spacing:.52em;margin-top:5px}
+.desktop-links{display:flex;align-items:center;gap:clamp(20px,3.2vw,58px)}
+.desktop-links a,.header-contact{font-size:10px;font-weight:400;letter-spacing:.17em;white-space:nowrap;transition:opacity .25s,color .25s}
+.desktop-links a{color:#c5c5c5}.desktop-links a:hover,.desktop-links a.is-current{color:#fff}
+.header-actions{display:flex;align-items:center;gap:14px}
+.header-contact{display:inline-flex;gap:24px;align-items:center;padding:13px 19px;border:1px solid rgba(255,255,255,.50);border-radius:50px;background:rgba(255,255,255,.07)}
+.header-contact:hover{background:#fff;color:#000}
+.menu-toggle{position:relative;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:5px;border:1px solid rgba(255,255,255,.30);border-radius:50%;background:rgba(255,255,255,.08);color:#fff;width:44px;height:44px;cursor:pointer;z-index:1004;transition:background .3s}
+.menu-toggle:hover{background:rgba(255,255,255,.16)}.menu-toggle span{width:19px;height:1.5px;display:block;background:#fff;border-radius:3px;transition:transform .3s,opacity .3s}.menu-toggle[aria-expanded="true"] span:first-child{transform:translateY(6.5px) rotate(45deg)}.menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}.menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+/* Full viewport overlay with centralized menu */
+.nav-menu{position:fixed;inset:0;z-index:999;background:#000;display:flex;flex-direction:column;justify-content:space-between;padding:116px clamp(25px,7vw,120px) 35px;opacity:0;visibility:hidden;pointer-events:none;transform:translateY(-15px);transition:opacity .35s,visibility .35s,transform .4s var(--ease);height:100vh;height:100dvh;overflow-y:auto;overscroll-behavior:contain}
+.nav-menu.is-open{visibility:visible;opacity:1;pointer-events:auto;transform:translateY(0)}
+.overlay-head{display:flex;align-items:center;gap:11px;color:#fff;font-size:10px;letter-spacing:.23em}.overlay-head img{height:30px;width:21px;object-fit:contain}.overlay-head>span:last-child{margin-left:auto;color:#999;font-size:9px}
+.overlay-links{margin:auto;display:flex;flex-direction:column;align-items:center;text-align:center;justify-content:center;gap:clamp(6px,1.9vh,21px);width:100%;padding-block:25px}
+.overlay-links a{font-weight:350;letter-spacing:.11em;font-size:clamp(23px,5vw,58px);line-height:1.23;padding:6px 10px;transition:color .2s,transform .2s;white-space:nowrap}
+.overlay-links a small{font-size:.26em;vertical-align:middle;color:#777;letter-spacing:.1em;margin-right:.8em}.overlay-links a:hover{transform:translateX(8px);color:#bbb}
+.overlay-bottom{border-top:1px solid var(--line);padding-top:22px;display:flex;align-items:center;justify-content:space-between;gap:15px}.overlay-ident{display:flex;align-items:center;gap:12px;font-size:10px;letter-spacing:.21em;line-height:1.8}.overlay-ident img{height:38px;width:26px;object-fit:contain}.overlay-ident small{color:var(--muted);font-size:8px}.overlay-social{display:flex;align-items:center;gap:18px}.overlay-social a{font-size:9px;letter-spacing:.12em;color:#bcbcbc}
+/* Cinematic actual supplied MP4 */
+.hero{isolation:isolate;position:relative;width:100%;height:100vh;height:100svh;min-height:610px;background:#000;overflow:hidden;display:flex;align-items:center}
+.hero-media,.hero-shade{position:absolute;inset:0;z-index:-2}.hero-media video{width:100%;height:100%;object-fit:cover;object-position:center;opacity:.94}
+.hero-shade{z-index:-1;background:linear-gradient(90deg,rgba(0,0,0,.05) 0%,rgba(0,0,0,.13) 40%,rgba(0,0,0,.49) 66%,rgba(0,0,0,.74) 100%),linear-gradient(180deg,rgba(0,0,0,.46),transparent 25%,transparent 55%,rgba(0,0,0,.84) 90%,#000 100%)}
+.hero-inner{display:flex;justify-content:flex-end;align-items:center;height:100%;padding-top:64px;padding-bottom:54px}
+.hero-content{width:min(47%,560px);text-align:center;display:flex;align-items:center;flex-direction:column}
+.hero-identity{display:flex;flex-direction:column;align-items:center;gap:15px;margin-bottom:20px;font-size:10px;letter-spacing:.38em;font-weight:400}.hero-identity img{width:48px;height:67px;object-fit:contain}
+.hero-eyebrow,.micro-label{font-size:9px;letter-spacing:.29em;font-weight:350;color:#c6c6c6;margin:0}
+.hero h1{font-weight:330;font-size:clamp(33px,4.3vw,62px);line-height:1.18;letter-spacing:.055em;margin:17px 0 14px;white-space:normal}.hero h1 span{display:block;letter-spacing:.21em;font-size:.70em;margin-top:7px}
+.hero-categories{margin:6px 0 13px;font-size:11px;letter-spacing:.13em;font-weight:400;line-height:1.8}.hero-categories span{padding:0 6px;color:#8a8a8a}
+.hero-intro{font-size:12px;line-height:1.9;color:#c3c3c3;margin:0 0 27px;max-width:340px}
+.hero-buttons{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:space-between;gap:22px;padding:15px 20px;min-height:49px;border:1px solid #fff;font-size:10px;letter-spacing:.15em;font-weight:450;text-align:center;border-radius:50px;transition:background .3s,color .3s,transform .3s,border-color .3s;cursor:pointer}
+.btn:hover{transform:translateY(-3px)}.btn-white{background:#fff;color:#000}.btn-white:hover{background:#cfcfcf;border-color:#cfcfcf}.btn-outline{background:rgba(0,0,0,.27);color:#fff;border-color:rgba(255,255,255,.57)}.btn-outline:hover{background:#fff;color:#000;border-color:#fff}
+.hero-floor{position:absolute;left:50%;transform:translateX(-50%);bottom:25px;display:flex;align-items:center;justify-content:space-between;gap:12px;color:#acacac;letter-spacing:.17em;font-size:9px}.hero-floor a{color:#fff}.hero-floor a span{padding-left:13px}.hero-floor button{font-size:9px;letter-spacing:.12em;color:#ccc;background:transparent;border:0;cursor:pointer;padding:12px}.hero-floor button:hover{color:#fff}
+/* Centered editorial identity */
+.section-center{text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.section-logo{width:34px;height:50px;object-fit:contain;margin-bottom:19px}
+.section-center h2,.cinematic-center h2,.about-visual h2{font-size:clamp(23px,3.2vw,39px);font-weight:350;line-height:1.4;letter-spacing:.14em;margin:15px 0 2px}
+.section-center p:not(.micro-label){font-size:13px;line-height:2;color:#bdbdbd;max-width:540px;margin:17px auto 0}
+.tiny-rule{width:44px;height:1px;background:#fff;opacity:.78;margin:20px 0 0}
+.signature{background:#000;border-bottom:1px solid rgba(255,255,255,.06)}
+.pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:66px}
+.pillar{background:#080808;border:1px solid var(--line);border-radius:10px;text-align:center;padding:37px 24px;transition:transform .35s,border-color .35s}
+.pillar:hover{transform:translateY(-5px);border-color:rgba(255,255,255,.45)}
+.pillar>span{font-size:11px;color:#9e9e9e;letter-spacing:.12em}.pillar h3{margin:18px 0 7px;font-size:12px;font-weight:450;letter-spacing:.15em}.pillar p{font-size:11px;line-height:1.85;color:#a9a9a9;margin:0}
+.collection-section{background:#000}.collection-heading{margin-bottom:45px}.product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px 16px}
+.product-card{min-width:0;color:#fff;display:block;text-decoration:none}.product-card-visual{position:relative;aspect-ratio:4/5;background:#0b0b0b;border:1px solid var(--line);border-radius:10px;overflow:hidden;transition:border-color .3s,box-shadow .3s}.product-card-visual img{width:100%;height:100%;object-fit:cover;transition:transform .65s var(--ease);filter:grayscale(100%)}
+.product-card:hover .product-card-visual{border-color:rgba(255,255,255,.54);box-shadow:0 16px 40px rgba(255,255,255,.035)}.product-card:hover img{transform:scale(1.045)}
+.card-serial{position:absolute;top:15px;left:15px;font-size:9px;color:#d2d2d2;letter-spacing:.16em}
+.product-card-visual .product-mini-logo{position:absolute;top:12px;right:14px;width:19px;height:27px;object-fit:contain;opacity:.80;filter:none}.product-card-arrow{position:absolute;right:14px;bottom:14px;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;color:#000;font-size:18px;transition:transform .3s}.product-card:hover .product-card-arrow{transform:rotate(45deg)}
+.product-card-bottom{display:flex;align-items:start;justify-content:space-between;gap:12px;padding:16px 3px 0}.product-card-category{font-size:9px;letter-spacing:.15em;color:#969696;margin:0 0 7px}.product-card-title{font-size:12px;letter-spacing:.07em;font-weight:400;line-height:1.5;margin:0}.product-card-price{font-size:12px;white-space:nowrap;color:#fff;font-weight:400}
+.collection-end{margin-top:70px;text-align:center;color:#aaa;display:flex;align-items:center;flex-direction:column;gap:8px}.collection-end img{width:23px;height:35px;object-fit:contain}.collection-end p{font-size:9px;letter-spacing:.2em}.collection-end span{margin-inline:8px}
+.cinematic-divider{height:610px;position:relative;background:#000;display:flex;align-items:center;justify-content:center;overflow:hidden}.cinematic-divider>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 37%;opacity:.56}.cinematic-scrim{position:absolute;inset:0;background:linear-gradient(180deg,#000 0%,rgba(0,0,0,.52) 27%,rgba(0,0,0,.63) 66%,#000 100%)}
+.cinematic-center{position:relative;display:flex;align-items:center;flex-direction:column;text-align:center;padding:20px}.cinematic-center>img{height:55px;width:38px;object-fit:contain;margin-bottom:12px}.cinematic-center>span{font-size:10px;letter-spacing:.32em}.cinematic-center h2{margin:10px 0;font-size:clamp(28px,4vw,45px)}.cinematic-center p{font-size:9px;letter-spacing:.23em;color:#d6d6d6;margin:1px 0 27px}
+.contact-section{background:#000;border-top:1px solid rgba(255,255,255,.06)}.contact-section .btn{margin:23px 0 14px}.contact-section .email{font-size:12px;color:#a4a4a4;letter-spacing:.05em;margin-top:6px}.contact-section .email:hover{color:#fff}
+.site-footer{background:#030303;border-top:1px solid var(--line);padding:35px 0 0}.footer-main{display:flex;align-items:center;justify-content:space-between;gap:28px;padding-bottom:35px}.footer-center{display:flex;flex-direction:column;align-items:center;gap:7px;font-size:12px;letter-spacing:.16em}.footer-center span{font-size:8px;letter-spacing:.3em;color:#aaa}.footer-social{display:flex;gap:17px;align-items:center}.footer-social a{font-size:9px;letter-spacing:.08em;color:#c6c6c6}.footer-social a:hover{color:#fff}.footer-bottom{display:flex;align-items:center;justify-content:space-between;gap:15px;border-top:1px solid var(--line);padding-block:22px;color:#898989;font-size:9px;letter-spacing:.1em}.footer-bottom a{color:#fff}
+/* Secondary pages */
+.page-hero{position:relative;min-height:575px;height:75svh;background:#000;display:flex;align-items:center;justify-content:center;overflow:hidden}.page-hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;opacity:.58}.page-hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.65),rgba(0,0,0,.4) 43%,#000 100%)}
+.page-hero-content{position:relative;text-align:center;display:flex;flex-direction:column;align-items:center;padding:130px 20px 65px}.page-hero-content img{height:67px;width:47px;object-fit:contain}.page-hero-content span{font-size:10px;letter-spacing:.32em;margin:13px 0}.page-hero-content h1{font-size:clamp(32px,5vw,62px);font-weight:350;letter-spacing:.11em;margin:10px 0}.page-hero-content p{font-size:10px;letter-spacing:.26em;color:#ddd}
+.story-prose{max-width:760px;text-align:center;margin:38px auto 0}.story-prose p{font-size:13px;line-height:2.15;color:#c4c4c4;margin:0 auto 17px}.story-prose .lead{font-size:17px;color:#fff;font-weight:350}.story-prose strong{font-weight:450;letter-spacing:.18em;font-size:12px}
+.about-visual{height:470px;position:relative;display:flex;align-items:center;justify-content:center;background:#000}.about-visual>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.42}.about-visual::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#000,transparent 30%,rgba(0,0,0,.4) 70%,#000)}.about-visual-caption{z-index:1;display:flex;flex-direction:column;align-items:center;text-align:center}.about-visual-caption img{width:38px;height:56px;object-fit:contain}.about-visual-caption>span{font-size:10px;letter-spacing:.3em}.about-visual-caption p{font-size:9px;letter-spacing:.25em;color:#ddd}
+/* Scroll entrance only after script initializes; no blank content if JS blocked */
+.has-js .reveal{opacity:0;transform:translateY(17px);transition:opacity .8s ease,transform .8s var(--ease)}.has-js .reveal.in-view{opacity:1;transform:translateY(0)}
+@media(min-width:1600px){.hero-media video{object-position:center 45%}.hero-content{width:min(42%,610px)}}
+@media(max-width:1100px){.container{width:min(100% - 70px,1200px)}.desktop-links{gap:20px}.hero-content{width:50%}.hero h1{font-size:clamp(33px,4.8vw,54px)}.product-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.footer-main{flex-wrap:wrap}}
+@media(max-width:800px){.container{width:calc(100% - 44px)}.site-header{padding:12px 14px}.nav-shell{height:62px;padding-inline:19px}.desktop-links{display:none}.brand-logo{height:37px;width:26px}.brand-wordmark{font-size:11px}.header-contact{font-size:9px;padding:10px 14px}.menu-toggle{height:41px;width:41px}.section-pad{padding-block:80px}
+ .hero{min-height:650px;height:100svh}.hero-media video{object-position:36% center}.hero-shade{background:linear-gradient(180deg,rgba(0,0,0,.29) 0%,rgba(0,0,0,.05) 21%,rgba(0,0,0,.25) 42%,rgba(0,0,0,.75) 65%,#000 100%)}.hero-inner{align-items:flex-end;padding:90px 0 97px;justify-content:center}.hero-content{width:100%;max-width:550px}.hero-identity{gap:6px;margin-bottom:9px;font-size:9px}.hero-identity img{width:34px;height:47px}.hero-eyebrow{font-size:8px}.hero h1{font-size:clamp(30px,6.3vw,47px);margin:9px 0}.hero h1 span{margin-top:3px}.hero-categories{font-size:10px;margin:4px 0}.hero-intro{font-size:11px;margin-bottom:14px}.hero-floor{bottom:18px}.hero-floor>span{display:none}.pillars{grid-template-columns:1fr 1fr;gap:12px}.pillar:last-child{grid-column:1/-1}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 13px}.cinematic-divider{height:510px}.footer-main{flex-direction:column;align-items:center;text-align:center}.footer-social{justify-content:center}.overlay-head>span:last-child{display:none}
+}
+@media(max-width:520px){.container{width:calc(100% - 34px)}.nav-shell{height:58px;padding-inline:15px}.brand-lockup{gap:9px}.brand-wordmark{font-size:10px}.brand-wordmark small{font-size:7px}.brand-logo{width:25px;height:35px}.header-actions{gap:8px}.header-contact{display:none}.section-pad{padding-block:69px}.section-center h2{font-size:clamp(21px,6vw,28px);letter-spacing:.08em}.section-logo{width:28px;height:40px;margin-bottom:14px}.micro-label{font-size:8px;letter-spacing:.17em}.section-center p:not(.micro-label){font-size:12px;line-height:1.9}.pillars{grid-template-columns:1fr;margin-top:42px}.pillar:last-child{grid-column:auto}.pillar{padding:25px 14px}.pillar h3{font-size:11px;margin-top:9px}.pillar p{font-size:11px}.collection-heading{margin-bottom:31px}
+ .hero{min-height:625px}.hero-media video{object-position:31% center}.hero-inner{padding-bottom:99px;padding-top:73px}.hero-identity img{height:39px;width:27px}.hero-identity{font-size:8px}.hero h1{font-size:clamp(27px,7.6vw,38px);letter-spacing:.02em;line-height:1.08}.hero h1 span{font-size:.79em;letter-spacing:.13em}.hero-eyebrow{font-size:7px;letter-spacing:.17em}.hero-categories{font-size:9px;letter-spacing:.06em}.hero-categories span{padding:0 3px}.hero-intro{font-size:10px}.hero-buttons{gap:8px}.hero-buttons .btn{font-size:8px;min-height:43px;padding:12px 13px;gap:13px}.hero-floor{font-size:8px;justify-content:space-between}
+ .product-grid{gap:19px 10px}.product-card-visual{border-radius:10px}.product-card-bottom{padding:11px 1px 0;display:block}.product-card-category{font-size:8px;margin-bottom:4px}.product-card-title{font-size:10px}.product-card-price{display:block;font-size:10px;margin-top:7px}.card-serial{top:9px;left:9px;font-size:8px}.product-card-arrow{bottom:9px;right:9px;width:29px;height:29px;font-size:14px}.collection-end{margin-top:39px}.cinematic-divider{height:450px}.cinematic-center h2{font-size:27px;letter-spacing:.08em}
+ .nav-menu{padding:91px 21px max(20px,env(safe-area-inset-bottom))}.overlay-head img{height:26px}.overlay-head span{font-size:9px}.overlay-links a{font-size:clamp(25px,7.2vw,36px);padding:7px 0}.overlay-links a small{margin-right:.5em}.overlay-social{gap:8px;flex-wrap:wrap;justify-content:flex-end}.overlay-social a{font-size:8px}.overlay-ident{font-size:9px}.overlay-ident img{height:31px;width:21px}.overlay-bottom{gap:10px}.footer-bottom{font-size:8px}.page-hero{min-height:470px;height:68svh}.page-hero-content h1{font-size:clamp(28px,8.5vw,40px)}.story-prose p{font-size:12px}.story-prose .lead{font-size:15px}
+}
+@media(max-width:350px){.hero-intro{display:none}.hero h1{font-size:27px}.hero-buttons .btn{padding:11px;font-size:7px}.footer-social{gap:10px}.overlay-links a{font-size:25px}}
+@media(max-height:625px) and (max-width:800px){.hero{min-height:560px}.hero-identity img{height:33px}.hero-intro{display:none}.hero-inner{padding-bottom:77px}.nav-menu{padding-top:78px}.overlay-links{gap:0}.overlay-links a{padding:3px 0;font-size:clamp(22px,5vh,35px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.has-js .reveal{opacity:1;transform:none}}
+
+/* ===========================================================
+   USER-REQUESTED MINIMAL FIXES ONLY — 20 October 2026
+   =========================================================== */
+/* Brand name as one line in header AND footer */
+.brand-wordmark{white-space:nowrap;display:inline-block;line-height:1.2;letter-spacing:.12em}
+.footer-brand .brand-wordmark{white-space:nowrap}
+/* Extra menu categories: compact to preserve the original 50px navbar */
+.desktop-links{gap:clamp(10px,1.35vw,24px)}
+.desktop-links a{font-size:9px;letter-spacing:.11em}
+@media(max-width:1250px){.desktop-links{display:none}}
+/* Hero heading: exactly one line, larger genuine US logo */
+.hero h1{white-space:nowrap;font-size:clamp(24px,3.15vw,48px);letter-spacing:.035em;line-height:1.2}
+.hero-identity img{width:65px;height:88px}
+/* Eliminate any visual/play-control remnants while retaining autoplay video */
+#video-toggle{display:none!important}
+/* Signature taken from the fourth supplied image; after final About paragraph */
+.story-signature{display:block;width:min(100%,390px);height:auto;margin:22px auto 0;object-fit:contain}
+/* Full-screen overlay can scroll on smaller height phones with seven nav links */
+.overlay-links{gap:clamp(3px,1vh,12px);padding-block:14px}
+.overlay-links a{font-size:clamp(19px,3.25vw,41px);line-height:1.16;padding:4px 10px}
+@media(max-width:800px){
+  .hero h1{font-size:clamp(23px,5.3vw,39px);letter-spacing:.01em}
+  .hero-identity img{height:59px;width:42px}
+  .overlay-links a{font-size:clamp(20px,4.7vw,30px)}
+}
+@media(max-width:520px){
+  .hero h1{font-size:clamp(18px,5.35vw,29px);letter-spacing:0}
+  .hero-identity img{height:49px;width:36px}
+  .overlay-links a{font-size:clamp(18px,5.5vw,26px);padding:2px 0}
+  .overlay-links{gap:2px;padding-block:12px}
+  .story-signature{width:min(100%,315px);margin-top:17px}
+}
+@media(max-width:350px){.hero h1{font-size:17px}.overlay-links a{font-size:17px}}
+@media(max-height:625px) and (max-width:800px){
+  .overlay-links{gap:0;padding-block:5px}
+  .overlay-links a{font-size:clamp(15px,3.45vh,21px);padding:1px 0}
+}
+
+
+/* =========================================================
+   November 2026: real sunglasses catalogue and Coming Soon pages.
+   Original black/white design and responsive header preserved.
+   ========================================================= */
+.hero-categories a{color:inherit;text-decoration:none;transition:opacity .2s}
+.hero-categories a:hover{opacity:.65}
+.product-card-eyewear{background:radial-gradient(ellipse at 50% 50%,#161616 0%,#080808 70%);display:flex;align-items:center;justify-content:center}
+.product-card-eyewear>img:first-child{width:100%;height:100%;object-fit:contain;padding:clamp(10px,2vw,26px);filter:none;transform:scale(1.09);transition:transform .55s cubic-bezier(.2,.8,.2,1)}
+.product-card:hover .product-card-eyewear>img:first-child{transform:scale(1.18)}
+.product-cover-code{margin:7px 0 0;color:#9e9e9e;font-size:10px;letter-spacing:.07em;white-space:normal}
+.product-card-explore{font-size:9px;letter-spacing:.08em;color:#dadada;white-space:nowrap;align-self:center}
+.product-card-eyewear .product-mini-logo{filter:none;transform:none;object-fit:contain;padding:0}
+.product-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:800px){.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.product-card-explore{display:none}.product-cover-code{font-size:8px}}
+@media(max-width:370px){.product-grid{grid-template-columns:1fr}}
+.coming-hero{position:relative;min-height:100svh;min-height:100dvh;background:#000;isolation:isolate;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:110px 25px 80px;text-align:center}
+.coming-media,.coming-scrim{position:absolute;inset:0;z-index:-2}.coming-media img{width:100%;height:100%;object-fit:cover;object-position:35% center;opacity:.52}
+.coming-scrim{z-index:-1;background:linear-gradient(90deg,rgba(0,0,0,.55),rgba(0,0,0,.72)),linear-gradient(180deg,#000 0%,transparent 28%,transparent 66%,#000 100%)}
+.coming-inner{display:flex;flex-direction:column;align-items:center;max-width:700px}.coming-logo{width:64px;height:86px;object-fit:contain;margin-bottom:14px}.coming-category{font-size:11px;letter-spacing:.36em;margin:35px 0 6px;color:#ddd}
+.coming-inner h1{font-size:clamp(29px,6vw,72px);font-weight:320;letter-spacing:.13em;line-height:1.13;white-space:nowrap;margin:8px 0 16px}
+.coming-copy{color:#bcbcbc;font-size:12px;line-height:1.8;margin:0 0 28px}.coming-foot{position:absolute;bottom:30px;font-size:9px;letter-spacing:.20em;color:#bcbcbc}.coming-foot span{padding:0 8px}
+@media(max-width:520px){.coming-logo{width:48px;height:70px}.coming-inner h1{font-size:clamp(24px,8.3vw,43px);letter-spacing:.04em}.coming-category{font-size:9px;letter-spacing:.2em}.coming-copy{font-size:11px}.coming-hero{padding-bottom:100px}}
+
+/* ===== Request-specific collection addition, preserving every other section ===== */
+/* All 11 individual variants in the original family order, with their real photo backgrounds. */
+.collection-section .product-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:26px 17px}
+.collection-group-heading{grid-column:1/-1;display:flex;align-items:baseline;justify-content:space-between;gap:20px;border-bottom:1px solid rgba(255,255,255,.20);padding-bottom:13px;margin:26px 0 0}
+.collection-group-heading:first-child{margin-top:0}
+.collection-group-heading h3{font-size:16px;font-weight:400;letter-spacing:.2em;margin:0;color:#fff}
+.collection-group-heading span{font-size:9px;letter-spacing:.15em;color:#adadad;white-space:nowrap}
+/* Do not remove or mask the original white / gray photographic background. */
+.product-card-original{aspect-ratio:1 / 1;background:#f1f1f1;overflow:hidden;border-radius:10px}
+.product-card-original>img:first-child{width:100%;height:100%;padding:0;filter:none;object-fit:cover;transform:none;transition:transform .6s var(--ease)}
+.product-card:hover .product-card-original>img:first-child{transform:scale(1.035)}
+.product-card-original .card-serial{color:#fff;background:rgba(0,0,0,.72);padding:6px 9px;border-radius:30px;line-height:1}
+.product-card-original .product-mini-logo{background:#111;border-radius:50%;padding:6px;width:32px;height:32px;right:12px;top:11px;object-fit:contain;opacity:1}
+.product-card-original .product-card-arrow{background:#101010;color:#fff;border:1px solid #fff}
+@media(max-width:1100px){.collection-section .product-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:800px){.collection-section .product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 12px}}
+@media(max-width:520px){.collection-group-heading{margin-top:19px;padding-bottom:11px}.collection-group-heading h3{font-size:12px}.collection-group-heading span{font-size:8px}.product-card-original .card-serial{top:8px;left:7px;font-size:7px;padding:5px 7px}.product-card-original .product-mini-logo{right:8px;top:8px;width:26px;height:26px;padding:5px}.collection-section .product-grid{gap:19px 10px}}
+@media(max-width:370px){.collection-section .product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* =============================================================
+   OWNER-REQUESTED PRICES / SIGNATURE / VITO CREDIT / RESPONSIVE
+   All original imagery, layout, tiger video, and typography kept.
+   ============================================================= */
+/* Price below product code on colour cards; no layout change to the photo. */
+.product-card-bottom .product-card-price{display:block;margin:9px 0 0;color:#fff;font-size:13px;font-weight:450;letter-spacing:.045em;line-height:1.4;white-space:nowrap}
+.collection-group-heading span{white-space:nowrap}
+/* Signature slightly smaller on all display sizes, while keeping the aspect ratio. */
+.story-signature{width:min(100%,285px);max-width:100%;height:auto}
+/* Place the supplied VITO logo on the existing footer bottom line. */
+.footer-bottom{flex-wrap:wrap;min-width:0}
+.footer-bottom>span{min-width:0}
+.footer-credit{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-width:0;white-space:nowrap;flex-shrink:0}
+.footer-credit span{font-size:8px;font-weight:400;letter-spacing:.19em;color:#a7a7a7}
+.footer-credit img{display:block;width:90px;height:auto;max-width:100%;object-fit:contain}
+.footer-bottom>a{white-space:nowrap}
+/* Guard against cramped iPads, Android phones, iPhones, and browser zoom. */
+.nav-shell,.header-actions,.footer-main,.footer-bottom,.product-card-bottom{min-width:0}
+.header-actions,.menu-toggle{flex-shrink:0}
+.nav-shell .brand-lockup{min-width:0;max-width:calc(100% - 60px)}
+.nav-shell .brand-wordmark{overflow:hidden;text-overflow:ellipsis}
+.menu-toggle{min-width:44px;min-height:44px;touch-action:manipulation}
+.footer-social{flex-wrap:wrap;row-gap:13px;justify-content:center}
+.overlay-links a{overflow-wrap:anywhere}
+@media(max-width:1100px){
+  .story-signature{width:min(100%,250px)}
+  .footer-bottom{gap:16px}
+}
+@media(max-width:800px){
+  .nav-shell{gap:10px}
+  .header-contact{white-space:nowrap}
+  .footer-credit{order:3;width:100%;margin-top:2px}
+  .footer-credit img{width:82px}
+  .story-signature{width:min(100%,245px)}
+  .collection-group-heading{flex-wrap:wrap;align-items:center;gap:8px}
+}
+@media(max-width:520px){
+  .story-signature{width:min(100%,210px)}
+  .footer-bottom{display:flex;flex-direction:column;align-items:center;text-align:center;gap:17px;padding-bottom:max(23px,env(safe-area-inset-bottom))}
+  .footer-bottom>span{overflow-wrap:anywhere}
+  .footer-credit{order:0;width:auto;margin-top:0}
+  .footer-credit img{width:78px}
+  .footer-bottom>a{order:1}
+  .product-card-bottom .product-card-price{font-size:11px;margin-top:7px}
+  .nav-shell .brand-wordmark{font-size:10px;letter-spacing:.08em}
+  .nav-shell{padding-inline:14px}
+  .gallery-arrow{min-width:42px;min-height:42px}
+  .product-card-original .product-mini-logo{max-width:26px;max-height:26px}
+}
+@media(max-width:360px){
+  .nav-shell .brand-wordmark{font-size:9px}
+  .nav-shell .brand-lockup{gap:7px}
+  .nav-shell{padding-inline:12px}
+  .menu-toggle{width:44px;height:44px}
+  .footer-social{gap:12px}
+}
+
+
+============================== css/product.css ==============================
+
+/* US MEN BRAND — PRODUCT DETAILS / WHITE & BLACK */
+.product-page{padding-top:145px;padding-bottom:90px;background:#000}
+.breadcrumb{display:flex;gap:12px;align-items:center;flex-wrap:wrap;font-size:9px;letter-spacing:.15em;color:#a3a3a3;margin-bottom:33px}.breadcrumb a:hover,.breadcrumb span:last-child{color:#fff}
+.product-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.86fr);align-items:start;gap:clamp(30px,6vw,95px)}
+.product-gallery{min-width:0}.gallery-stage{position:relative;background:#090909;aspect-ratio:4/4.65;overflow:hidden;border:1px solid var(--line);border-radius:10px}.gallery-stage>img{width:100%;height:100%;object-fit:cover;cursor:zoom-in;filter:grayscale(100%);transition:transform .5s}.gallery-stage>img:hover{transform:scale(1.025)}
+.gallery-top-label{position:absolute;top:17px;left:18px;display:flex;align-items:center;gap:8px;pointer-events:none;font-size:9px;letter-spacing:.16em}.gallery-top-label img{width:19px;height:28px;object-fit:contain}
+.gallery-zoom,.gallery-arrow{position:absolute;cursor:pointer;color:#fff;background:rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.47);border-radius:50%;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(10px);transition:background .25s,color .25s}
+.gallery-zoom:hover,.gallery-arrow:hover{background:#fff;color:#000}.gallery-zoom{width:40px;height:40px;top:14px;right:16px;font-size:20px}.gallery-arrow{width:41px;height:41px;top:50%;transform:translateY(-50%);font-size:18px}.gallery-prev{left:13px}.gallery-next{right:13px}
+.gallery-counter{position:absolute;right:19px;bottom:17px;font-size:9px;letter-spacing:.2em}
+.gallery-thumbs{display:flex;gap:9px;flex-wrap:wrap;margin-top:11px}.gallery-thumb{width:70px;height:85px;display:block;background:#090909;opacity:.6;border:1px solid var(--line);border-radius:10px;padding:0;overflow:hidden;cursor:pointer}.gallery-thumb.active,.gallery-thumb:hover{border-color:#fff;opacity:1}.gallery-thumb img{height:100%;width:100%;object-fit:cover;filter:grayscale(100%)}
+.product-details{position:sticky;top:125px;padding-top:14px}.detail-identity{display:flex;align-items:center;gap:10px;margin-bottom:15px;color:#fff;font-size:10px;letter-spacing:.24em}.detail-identity img{width:25px;height:37px;object-fit:contain}.product-details>.micro-label{margin-bottom:13px}
+.product-details h1{font-size:clamp(30px,3.5vw,52px);line-height:1.22;font-weight:350;letter-spacing:.07em;margin:0 0 15px}.product-price-detail{font-size:17px;font-weight:400;color:#fff;margin:0 0 22px}.detail-rule{height:1px;background:var(--line);margin-bottom:25px}.detail-overline{display:flex;justify-content:space-between;gap:12px;font-size:9px;font-weight:450;letter-spacing:.19em;margin:0 0 15px}.detail-overline span{color:#777}.product-description{color:#bfbfbf;font-size:12px;line-height:1.95;margin:0 0 25px}.details-specs{border-top:1px solid var(--line);padding-top:22px}.details-specs ul{list-style:none;padding:0;margin:0}.details-specs li{position:relative;padding:0 0 11px 18px;color:#bcbcbc;font-size:11px;line-height:1.65}.details-specs li::before{content:'—';position:absolute;left:0;color:#fff}
+.product-cta{margin-top:25px}.product-cta .btn{width:100%}.product-cta>p{font-size:10px;line-height:1.7;color:#aaa;margin:10px 0}.product-promise{display:flex;align-items:center;gap:7px;margin-top:25px;padding-top:18px;border-top:1px solid var(--line);font-size:9px;letter-spacing:.12em;color:#b1b1b1}.product-promise img{width:21px;height:30px;object-fit:contain}.product-promise span{color:#777}
+.related-products{background:#030303;border-top:1px solid var(--line)}.related-heading{margin-bottom:37px}.related-heading .text-link{margin-top:22px;font-size:10px;letter-spacing:.15em;color:#fff}.related-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.lightbox{position:fixed;inset:0;z-index:5000;background:rgba(0,0,0,.96);display:flex;align-items:center;justify-content:center;padding:25px}.lightbox[hidden]{display:none}.lightbox>img{max-width:94%;max-height:90vh;object-fit:contain;filter:grayscale(100%)}.lightbox-close{position:absolute;right:22px;top:18px;z-index:3;color:#fff;background:transparent;border:0;font-size:39px;cursor:pointer}
+@media(max-width:900px){.product-layout{grid-template-columns:1fr 1fr;gap:30px}.product-details h1{font-size:33px}.related-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:750px){.product-page{padding-top:111px;padding-bottom:60px}.product-layout{grid-template-columns:1fr;gap:29px}.product-details{position:static;padding-top:0}.gallery-stage{aspect-ratio:4/4.2}.product-details h1{font-size:clamp(29px,6vw,44px)}}
+@media(max-width:480px){.product-page{padding-top:104px}.breadcrumb{font-size:8px;margin-bottom:21px}.gallery-stage{aspect-ratio:4/4.5}.gallery-arrow{height:36px;width:36px}.gallery-top-label{font-size:8px}.gallery-thumb{width:58px;height:68px}.product-description{font-size:12px}.product-details h1{font-size:31px}}
+
+
+/* Real eyewear photos retain original colour; transparent backgrounds are shown on black. */
+.gallery-stage{background:radial-gradient(ellipse at center,#171717 0%,#090909 72%);aspect-ratio:1/1.08;touch-action:pan-y}
+.gallery-stage>img{object-fit:contain;filter:none;padding:clamp(14px,3vw,35px)}
+.gallery-thumb{width:75px;height:75px;flex:0 0 75px;background:#101010}
+.gallery-thumb img{object-fit:contain;filter:none;padding:4px}
+.gallery-thumbs{flex-wrap:nowrap;overflow-x:auto;padding-bottom:5px;scrollbar-width:thin}
+.lightbox>img{filter:none}
+.product-price-detail[hidden]{display:none}
+.variant-selector{padding-bottom:21px;margin-bottom:19px;border-bottom:1px solid var(--line)}
+.variant-options{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:13px}
+.variant-pill{padding:12px 15px;background:#0b0b0b;color:#ddd;border:1px solid rgba(255,255,255,.26);border-radius:50px;font-size:10px;cursor:pointer;transition:.22s;line-height:1.2}
+.variant-pill:hover,.variant-pill.selected{background:#fff;border-color:#fff;color:#000}
+.selected-code{margin:0;font-size:11px;letter-spacing:.05em;color:#bdbdbd}
+.related-grid{grid-template-columns:repeat(2,minmax(0,1fr));max-width:920px;margin-inline:auto}
+@media(max-width:750px){.gallery-stage{aspect-ratio:1/1.04}}
+@media(max-width:480px){.gallery-stage{aspect-ratio:1/1.14}.variant-pill{padding:10px 12px}.gallery-thumb{width:64px;height:64px;flex-basis:64px}}
+
+/* Keep the uploaded photographic backgrounds on the product page too. */
+.gallery-stage{background:#efefef;aspect-ratio:1/1}
+.gallery-stage>img{width:100%;height:100%;object-fit:cover;padding:0;filter:none}
+.gallery-thumb{background:#f0f0f0}
+.gallery-thumb img{object-fit:cover;padding:0;filter:none}
+.gallery-top-label{background:rgba(0,0,0,.72);border-radius:30px;padding:6px 10px}
+.gallery-counter{background:rgba(0,0,0,.72);border-radius:30px;padding:7px 10px}
+.lightbox>img{filter:none}
+@media(max-width:750px){.gallery-stage{aspect-ratio:1/1}}
+@media(max-width:480px){.gallery-stage{aspect-ratio:1/1}}
+
+
+============================== css/footer-fix.css ==============================
+
+/* US MEN BRAND: single-line footer label.
+   This rule is ALREADY INCLUDED in css/style.css.
+   Keep for reference or copy it into another version of the site. */
+.footer-brand .brand-wordmark {
+  display: inline-block;
+  white-space: nowrap;
+  line-height: 1.2;
+  letter-spacing: .12em;
+}
+
+
+============================== js/main.js ==============================
+
+/* US MEN BRAND — navbar, full-screen overlay, cards, video and reveals */
+(()=>{
+  'use strict';
+  const doc=document, body=doc.body;
+  body.classList.add('has-js');
+  const menu=doc.getElementById('nav-menu'),toggle=doc.getElementById('menu-toggle');
+  let previousFocus=null;
+  function closeMenu(){if(!menu||!toggle)return;menu.classList.remove('is-open');menu.setAttribute('aria-hidden','true');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open menu');body.classList.remove('menu-open');if(previousFocus?.isConnected)previousFocus.focus();}
+  function openMenu(){if(!menu||!toggle)return;previousFocus=doc.activeElement;menu.classList.add('is-open');menu.setAttribute('aria-hidden','false');toggle.setAttribute('aria-expanded','true');toggle.setAttribute('aria-label','Close menu');body.classList.add('menu-open');const first=menu.querySelector('.overlay-links a');first?.focus();}
+  if(toggle&&menu){toggle.addEventListener('click',()=>toggle.getAttribute('aria-expanded')==='true'?closeMenu():openMenu());menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));doc.addEventListener('keydown',e=>{
+    if(e.key==='Escape'&&menu.classList.contains('is-open')){e.preventDefault();closeMenu();}
+    if(e.key==='Tab'&&menu.classList.contains('is-open')){const focusables=[...menu.querySelectorAll('a')].filter(a=>a.getClientRects().length);focusables.push(toggle);const i=focusables.indexOf(doc.activeElement);if(e.shiftKey&&i===0){e.preventDefault();toggle.focus();}else if(!e.shiftKey&&i===focusables.length-1){e.preventDefault();focusables[0].focus();}}
+  });}
+  const header=doc.getElementById('site-header'),progress=doc.querySelector('.scroll-progress');
+  function onScroll(){if(header)header.classList.toggle('is-scrolled',window.scrollY>24);const max=doc.documentElement.scrollHeight-innerHeight;if(progress)progress.style.transform='scaleX('+(max>0?Math.max(0,Math.min(1,scrollY/max)):0)+')';}
+  addEventListener('scroll',onScroll,{passive:true});onScroll();
+  const year=doc.getElementById('year');if(year)year.textContent=new Date().getFullYear();
+  const grid=doc.getElementById('product-grid');
+  if(grid&&typeof productsData!=='undefined'&&typeof makeProductCard==='function'){
+    Object.keys(productsData).forEach(id=>{
+      const p=getProduct(id);if(!p)return;
+      // Group all colour cards by their family: 400 together, 250 together, 300 together.
+      const heading=document.createElement('div');heading.className='collection-group-heading reveal';
+      const name=document.createElement('h3');name.textContent=p.name;
+      const info=document.createElement('span');info.textContent=String(p.variants.length).padStart(2,'0')+' COLOURS · '+p.price;
+      heading.append(name,info);grid.appendChild(heading);
+      p.variants.forEach(variant=>grid.appendChild(makeVariantCard(p,variant)));
+    });
+  }
+  const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduceMotion){doc.querySelectorAll('.reveal').forEach(el=>el.classList.add('in-view'));}
+  else if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){entry.target.classList.add('in-view');observer.unobserve(entry.target);}}},{threshold:.08,rootMargin:'0px 0px -25px 0px'});doc.querySelectorAll('.reveal').forEach(el=>observer.observe(el));}
+  else doc.querySelectorAll('.reveal').forEach(el=>el.classList.add('in-view'));
+  const video=doc.getElementById('hero-video');
+  if(video){
+    // Background plays automatically, loops silently, and has no visible controls.
+    video.muted=true;video.defaultMuted=true;video.loop=true;
+    const tryPlay=()=>{if(!doc.hidden){const attempt=video.play();if(attempt?.catch)attempt.catch(()=>{});}};
+    tryPlay();
+    doc.addEventListener('visibilitychange',()=>{if(doc.hidden)video.pause();else tryPlay();});
+    // The poster remains visible if the video codec cannot be played.
+    video.addEventListener('error',()=>{video.style.display='none';});
+  }
+  if(!reduceMotion&&window.gsap&&window.ScrollTrigger){try{gsap.registerPlugin(ScrollTrigger);gsap.to('.cinematic-divider>img',{yPercent:7,ease:'none',scrollTrigger:{trigger:'.cinematic-divider',start:'top bottom',end:'bottom top',scrub:true}});}catch(err){/* CSS fallback */}}
+})();
+
+
+============================== js/catalog.js ==============================
+
+/* US MEN BRAND — Collection cards (only the 3 supplied eyewear models) */
+function getProduct(id){return productsData[id]||null;}
+function makeProductCard(p){
+  const a=document.createElement('a');a.className='product-card reveal';a.href='product.html?id='+encodeURIComponent(p.id);
+  a.setAttribute('aria-label','Explore '+p.name+' eyewear and '+p.count+' colour variants');
+  const visual=document.createElement('div');visual.className='product-card-visual product-card-eyewear product-card-original';
+  const img=document.createElement('img');img.src=p.cover;img.alt=p.name+' — '+p.default+' sunglasses';img.loading='lazy';img.decoding='async';visual.appendChild(img);
+  const serial=document.createElement('span');serial.className='card-serial';serial.textContent=p.name;visual.appendChild(serial);
+  const miniLogo=document.createElement('img');miniLogo.className='product-mini-logo';miniLogo.src='assets/us-logo.png';miniLogo.alt='';miniLogo.loading='lazy';visual.appendChild(miniLogo);
+  const arrow=document.createElement('span');arrow.className='product-card-arrow';arrow.setAttribute('aria-hidden','true');arrow.textContent='↗';visual.appendChild(arrow);
+  const data=document.createElement('div');data.className='product-card-bottom';
+  const left=document.createElement('div');const cat=document.createElement('p');cat.className='product-card-category';cat.textContent='SUNGLASSES · '+p.count+' COLOURS';
+  const title=document.createElement('h3');title.className='product-card-title';title.textContent=p.name;
+  const code=document.createElement('p');code.className='product-cover-code';code.textContent=p.variants.find(v=>v.label===p.default).code;
+  const price=document.createElement('p');price.className='product-card-price';price.textContent=p.price;
+  left.append(cat,title,code,price);const action=document.createElement('span');action.className='product-card-explore';action.textContent='VIEW DETAILS ↗';data.append(left,action);a.append(visual,data);return a;
+}
+
+
+/* A complete collection card for one named colour, linked to its family page.
+   Existing makeProductCard stays for the product-page recommendations. */
+function makeVariantCard(product, variant){
+  const card=document.createElement('a');
+  card.className='product-card reveal';
+  card.href='product.html?id='+encodeURIComponent(product.id)+'&color='+encodeURIComponent(variant.label);
+  card.setAttribute('aria-label','View '+variant.code+' and other '+product.name+' colours');
+  const visual=document.createElement('div');
+  visual.className='product-card-visual product-card-eyewear product-card-original';
+  const image=document.createElement('img');
+  image.src=variant.imgs[0];
+  image.alt=variant.code+' sunglasses, original product photo';
+  image.loading='lazy';image.decoding='async';
+  visual.appendChild(image);
+  const serial=document.createElement('span');
+  serial.className='card-serial';serial.textContent=product.id;visual.appendChild(serial);
+  const logo=document.createElement('img');
+  logo.className='product-mini-logo';logo.src='assets/us-logo.png';logo.alt='';logo.loading='lazy';visual.appendChild(logo);
+  const arrow=document.createElement('span');
+  arrow.className='product-card-arrow';arrow.setAttribute('aria-hidden','true');arrow.textContent='↗';visual.appendChild(arrow);
+  const details=document.createElement('div');details.className='product-card-bottom';
+  const left=document.createElement('div');
+  const cat=document.createElement('p');cat.className='product-card-category';cat.textContent='SUNGLASSES / '+product.id;
+  const title=document.createElement('h3');title.className='product-card-title';title.textContent=variant.code;
+  const colour=document.createElement('p');colour.className='product-cover-code';colour.textContent=variant.label;
+  const price=document.createElement('p');price.className='product-card-price';price.textContent=product.price;
+  left.append(cat,title,colour,price);
+  const action=document.createElement('span');action.className='product-card-explore';action.textContent='VIEW DETAILS ↗';
+  details.append(left,action);card.append(visual,details);return card;
+}
+
+
+============================== js/product.js ==============================
+
+// US MEN BRAND — Original supplied eyewear photos with their original backgrounds intact.
+// Verified brand prices supplied by the owner (USD), shared by all colours in each family.
+const productsData = {
+  "US-400": {
+    "name": "US-400",
+    "price": "$65.00",
+    "category": "SUNGLASSES",
+    "about": "Luxury, fashionable, retro square sunglasses with a full-rim frame.",
+    "specs": [
+      "Lenses optical attribution: UV400",
+      "Type: square",
+      "Style: luxury, fashionable, retro",
+      "Frame: Full rim",
+      "Features: UV protection, anti glare, anti radiation, comfortable, light weight, night vision"
+    ],
+    "default": "Blue",
+    "variants": [
+      {
+        "label": "Black",
+        "code": "US-400-Black",
+        "imgs": [
+          "assets/eyewear-original/01.webp",
+          "assets/eyewear-original/13.webp",
+          "assets/eyewear-original/25.webp"
+        ]
+      },
+      {
+        "label": "Blue",
+        "code": "US-400-Blue",
+        "imgs": [
+          "assets/eyewear-original/04.webp",
+          "assets/eyewear-original/16.webp",
+          "assets/eyewear-original/28.webp",
+          "assets/eyewear-original/43-blue-angle.webp"
+        ]
+      },
+      {
+        "label": "Green",
+        "code": "US-400-Green",
+        "imgs": [
+          "assets/eyewear-original/02.webp",
+          "assets/eyewear-original/14.webp",
+          "assets/eyewear-original/26.webp"
+        ]
+      },
+      {
+        "label": "Grey",
+        "code": "US-400-Grey",
+        "imgs": [
+          "assets/eyewear-original/03.webp",
+          "assets/eyewear-original/15.webp",
+          "assets/eyewear-original/27.webp"
+        ]
+      }
+    ],
+    "id": "US-400",
+    "count": 4,
+    "cover": "assets/eyewear-original/04.webp"
+  },
+  "US-250": {
+    "name": "US-250",
+    "price": "$60.00",
+    "category": "SUNGLASSES",
+    "about": "Luxury square rimless sunglasses featuring the distinctive black panther-inspired design.",
+    "specs": [
+      "Lenses optical attribution: UV400",
+      "Type: square",
+      "Style: luxury, black panther design",
+      "Frame: Rimless",
+      "Features: UV protection, anti glare, anti radiation, comfortable, light weight, night vision"
+    ],
+    "default": "Brown",
+    "variants": [
+      {
+        "label": "Gradient Blue",
+        "code": "US-250-Gradientblue",
+        "imgs": [
+          "assets/eyewear-original/12.webp",
+          "assets/eyewear-original/24.webp",
+          "assets/eyewear-original/41.webp",
+          "assets/eyewear-original/42.webp"
+        ]
+      },
+      {
+        "label": "Black",
+        "code": "US-250-Black",
+        "imgs": [
+          "assets/eyewear-original/11.webp",
+          "assets/eyewear-original/23.webp",
+          "assets/eyewear-original/40.webp"
+        ]
+      },
+      {
+        "label": "Brown",
+        "code": "US-250-Brown",
+        "imgs": [
+          "assets/eyewear-original/10.webp",
+          "assets/eyewear-original/22.webp",
+          "assets/eyewear-original/39.webp"
+        ]
+      }
+    ],
+    "id": "US-250",
+    "count": 3,
+    "cover": "assets/eyewear-original/10.webp"
+  },
+  "US-300": {
+    "name": "US-300",
+    "price": "$65.99",
+    "category": "SUNGLASSES",
+    "about": "Refined luxury square rimless sunglasses, designed with distinctive details.",
+    "specs": [
+      "Lenses optical attribution: UV400",
+      "Type: square",
+      "Style: luxury",
+      "Frame: Rimless",
+      "Features: UV protection, anti glare, anti radiation, comfortable, light weight, night vision"
+    ],
+    "default": "Black-Gold",
+    "variants": [
+      {
+        "label": "Blue",
+        "code": "US-300-Blue",
+        "imgs": [
+          "assets/eyewear-original/06.webp",
+          "assets/eyewear-original/18.webp",
+          "assets/eyewear-original/32.webp",
+          "assets/eyewear-original/33.webp"
+        ]
+      },
+      {
+        "label": "Gradient Blue",
+        "code": "US-300-gradientBlue",
+        "imgs": [
+          "assets/eyewear-original/07.webp",
+          "assets/eyewear-original/19.webp",
+          "assets/eyewear-original/34.webp",
+          "assets/eyewear-original/35.webp"
+        ]
+      },
+      {
+        "label": "Black-Silver",
+        "code": "US-300-Black-Silver",
+        "imgs": [
+          "assets/eyewear-original/05.webp",
+          "assets/eyewear-original/17.webp",
+          "assets/eyewear-original/29.webp",
+          "assets/eyewear-original/30.webp",
+          "assets/eyewear-original/31.webp"
+        ]
+      },
+      {
+        "label": "Black-Gold",
+        "code": "US-300-Black-Gold",
+        "imgs": [
+          "assets/eyewear-original/08.webp",
+          "assets/eyewear-original/09.webp",
+          "assets/eyewear-original/20.webp",
+          "assets/eyewear-original/21.webp",
+          "assets/eyewear-original/36.webp",
+          "assets/eyewear-original/37.webp",
+          "assets/eyewear-original/38.webp"
+        ]
+      }
+    ],
+    "id": "US-300",
+    "count": 4,
+    "cover": "assets/eyewear-original/08.webp"
+  }
+};
+
+
+============================== js/product-page.js ==============================
+
+/* Product detail: colour variants, real photo slider, thumb gallery, lightbox. */
+(()=>{
+ 'use strict';
+ const params=new URLSearchParams(location.search);
+ const product=getProduct(params.get('id'))||getProduct('US-400');
+ if(!product)return;
+ const E=id=>document.getElementById(id);
+ const getByLabel=label=>product.variants.find(v=>v.label.toLowerCase()===String(label).toLowerCase());
+ let variant=getByLabel(params.get('color'))||getByLabel(product.default)||product.variants[0];
+ let index=0,lastFocus=null;
+ const stage=E('gallery-main'),thumbs=E('gallery-thumbs'),counter=E('gallery-counter'),chooser=E('variant-options');
+ const lightbox=E('lightbox'),lightboxImg=E('lightbox-image'),closeButton=E('lightbox-close');
+ document.title=product.name+' — US MEN BRAND';
+ E('p-name').textContent=product.name;
+ E('p-category').textContent='[ SUNGLASSES — THE COLLECTION ]';
+ E('crumb-current').textContent=product.name;
+ E('p-desc').textContent=product.about;
+ E('p-price').textContent=product.price;E('p-price').hidden=false; // Owner-supplied price in USD.
+ const specs=E('p-specs');
+ specs.replaceChildren();product.specs.forEach(value=>{const li=document.createElement('li');li.textContent=value;specs.appendChild(li);});
+ const makeLabel=()=>variant.code;
+ function displaySlide(i){
+   index=(i+variant.imgs.length)%variant.imgs.length;
+   const src=variant.imgs[index];stage.src=src;stage.alt=variant.code+' photo '+(index+1);
+   counter.textContent=String(index+1).padStart(2,'0')+' / '+String(variant.imgs.length).padStart(2,'0');
+   [...thumbs.children].forEach((el,j)=>{el.classList.toggle('active',j===index);el.setAttribute('aria-pressed',String(j===index));});
+   if(!lightbox.hidden){lightboxImg.src=src;lightboxImg.alt=stage.alt;}
+ }
+ function setVariant(v){
+   variant=v;index=0;E('p-selected-code').textContent='Code: '+v.code;
+   chooser.querySelectorAll('button').forEach(el=>{const selected=el.dataset.code===v.code;el.classList.toggle('selected',selected);el.setAttribute('aria-pressed',String(selected));});
+   const inquire=E('inquire-btn');inquire.href='https://wa.me/447352935273?text='+encodeURIComponent('Hello US Men Brand, I would like to enquire about '+v.code+'.');
+   const newParams=new URLSearchParams(location.search);newParams.set('id',product.id);newParams.set('color',v.label);
+   history.replaceState(null,'',location.pathname+'?'+newParams.toString());
+   thumbs.replaceChildren();v.imgs.forEach((src,j)=>{
+     const btn=document.createElement('button');btn.type='button';btn.className='gallery-thumb';btn.setAttribute('aria-label','View '+v.code+' image '+(j+1));btn.setAttribute('aria-pressed','false');
+     const img=document.createElement('img');img.src=src;img.alt='';img.loading='lazy';btn.appendChild(img);btn.addEventListener('click',()=>displaySlide(j));thumbs.appendChild(btn);
+   });
+   displaySlide(0);
+ }
+ product.variants.forEach(v=>{
+   const btn=document.createElement('button');btn.type='button';btn.className='variant-pill';btn.dataset.code=v.code;
+   btn.textContent=v.label;btn.setAttribute('aria-label','Select '+v.code);btn.setAttribute('aria-pressed','false');btn.addEventListener('click',()=>setVariant(v));chooser.appendChild(btn);
+ });
+ setVariant(variant);
+ E('gallery-prev').addEventListener('click',()=>displaySlide(index-1));
+ E('gallery-next').addEventListener('click',()=>displaySlide(index+1));
+ function openZoom(){lastFocus=document.activeElement;lightboxImg.src=stage.src;lightboxImg.alt=stage.alt;lightbox.hidden=false;document.body.classList.add('lightbox-open');closeButton.focus();}
+ function closeZoom(){lightbox.hidden=true;document.body.classList.remove('lightbox-open');if(lastFocus?.isConnected)lastFocus.focus();}
+ E('gallery-zoom').addEventListener('click',openZoom);stage.addEventListener('click',openZoom);
+ stage.addEventListener('keydown',e=>{if(e.key==='Enter'){openZoom();}});
+ closeButton.addEventListener('click',closeZoom);lightbox.addEventListener('click',e=>{if(e.target===lightbox)closeZoom();});
+ window.addEventListener('keydown',e=>{
+   if(e.key==='Escape'&&!lightbox.hidden)closeZoom();
+   if(e.key==='ArrowRight'||e.key==='ArrowLeft'){
+     if(lightbox.hidden&&document.activeElement?.tagName==='BUTTON')return;
+     if(document.body.classList.contains('menu-open'))return;
+     displaySlide(index+(e.key==='ArrowRight'?1:-1));
+   }
+ });
+ let touchX=0;const stageWrap=E('gallery-stage');
+ stageWrap.addEventListener('touchstart',e=>{touchX=e.changedTouches[0].clientX;},{passive:true});
+ stageWrap.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-touchX;if(Math.abs(dx)>45)displaySlide(index+(dx<0?1:-1));},{passive:true});
+ const related=E('related-grid');Object.keys(productsData).filter(key=>key!==product.id).forEach(key=>{related.appendChild(makeProductCard(getProduct(key)));});
+ related.querySelectorAll('.reveal').forEach(el=>el.classList.add('in-view'));
+})();
+
